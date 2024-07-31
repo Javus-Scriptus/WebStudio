@@ -19,24 +19,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.container {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-a {
-  font-family: 'Roboto', sans-serif;
-}
-
 h1 {
   font-size: 44px;
   text-transform: uppercase;
   font-weight: 900;
-}
-
-h1:nth-child(2) {
-  margin: 0 auto;
 }
 
 h2 {
@@ -44,25 +30,25 @@ h2 {
   font-weight: 900;
 }
 
-button {
-  max-width: 216px;
-  border: solid 10px 32px;
-  border-color: #2f303a;
-  border-radius: 3px;
-  background-color: #2196f3;
-  color: #ffffff;
-}
-
 .header-container {
-  max-width: 1600px;
+  max-height: 80px;
   padding-top: 0px;
   padding-bottom: 13px;
+  margin-left: 215px;
 }
 
-.header-links {
+.header-links-3childs {
   display: flex;
   text-decoration: none;
   list-style: none;
+  gap: 50px;
+}
+
+.header-links-2childs {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 50px;
 }
 
 .header-content {
@@ -72,41 +58,9 @@ button {
   align-items: center;
 }
 
-.header-content:nth-child(1) {
-  max-width: 145px;
-  margin: 24px 93px 25px 215px;
-}
-
-.header-content:nth-child(2) {
-  max-width: 45px;
-  margin: 32px 50px 32px 93px;
-}
-.header-content:nth-child(3) {
-  max-width: 72px;
-  margin: 32px 50px;
-}
-.header-content:nth-child(4) {
-  max-width: 64px;
-  margin: 32px 344px 32px 50px;
-}
-.header-content:nth-child(5) {
-  max-width: 135px;
-  margin: 32px 50px 32px 344px;
-}
-
-.header-content:nth-child(6) {
-  max-width: 122px;
-  margin: 32px 215px 50px 32px;
-}
-
-.header-content:hover {
+.header-content:hover:-moz-only-whitespace {
   color: #2196f3;
-}
-
-.main-container {
-  max-width: 1600px;
-  padding-top: 67px;
-  padding-bottom: 94;
+  height: 200px;
 }
 
 .section {
@@ -118,87 +72,78 @@ button {
 .section-1 {
   color: #ffffff;
   background-color: #2f303a;
+  height: 600px;
 }
 
-.main-content:nth-child(3) {
-  margin: 94px 30px 10px 215px;
-}
-.main-content:nth-child(5) {
-  margin: 94px 30px 10px 30px;
-}
-.main-content:nth-child(7) {
-  margin: 94px 30px 10px 30px;
-}
-.main-content:nth-child(9) {
-  margin: 94px 215px 10px 30px;
+.section-3-h {
+  margin-left: 445px;
+  margin-right: 459px;
 }
 
-.main-content:nth-child(4) {
+.section-1-h1 {
+  margin-top: 195px;
+}
+
+.section-1-h2 {
+  margin-top: 10px;
+}
+
+.section-1-button {
+  width: 216px;
+  height: 50px;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 550;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.section-2 {
+  height: 206px;
+}
+
+.section-2 article {
   display: flex;
-  color: #757575;
-  font-weight: 400;
-  margin: 10px 30px 94px 215px;
 }
-.main-content:nth-child(6) {
+
+.section-2-ul {
+  list-style: none;
   display: flex;
-  color: #757575;
-  font-weight: 400;
-  margin: 10px 30px 118px 30px;
-}
-.main-content:nth-child(8) {
-  display: flex;
-  color: #757575;
-  font-weight: 400;
-  margin: 10px 30px 118px 30px;
-}
-.main-content:nth-child(10) {
-  display: flex;
-  color: #757575;
-  font-weight: 400;
-  margin: 10px 215px 94px 30px;
 }
 
-.main-content:nth-child(11) {
-  width: 370px;
-  height: 294px;
+.section-3 {
+  height: 386px;
 }
 
-.main-content:nth-child(12) {
-  width: 370px;
-  height: 294px;
-}
-
-.main-content:nth-child(13) {
-  width: 370px;
-  height: 294px;
-}
-
-.main-content:nth-child(14) {
-  width: 270px;
-  height: 260px;
-}
-
-.main-content:nth-child(15) {
-  width: 270px;
-  height: 260px;
-}
-
-.main-content:nth-child(16) {
-  width: 270px;
-  height: 260px;
-}
-
-.main-content:nth-child(16) {
-  width: 270px;
-  height: 260px;
-}
-
-.section:nth-child(1) {
-  flex-direction: column;
+.section-3-h {
+  margin-bottom: 50px;
 }
 
 .section-4 {
   background-color: #f5f4fa;
+  height: 648px;
+}
+.section-4-h {
+  margin-bottom: 50px;
+}
+
+.section-3-img {
+  gap: 30px;
+  display: flex;
+  list-style: none;
+}
+
+.section-4-img {
+  gap: 30px;
+  display: flex;
+  list-style: none;
+}
+
+.section:nth-child(1) {
+  flex-direction: column;
 }
 
 .section-2 p {
@@ -214,14 +159,17 @@ button {
 }
 
 .footer-container {
-  max-width: 1600px;
   padding-bottom: 60px;
   background-color: #2f303a;
   color: #ffffff;
-  margin-left: 215px;
 }
 
-.footer-container a {
+.footer-content {
+  margin-left: 172px;
+  margin-top: 60px;
+}
+
+.footer-a-1, .footer-a-2 {
   color: #757575;
   text-decoration: none;
   list-style: none;
