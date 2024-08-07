@@ -139,7 +139,11 @@ h2 {
 }
 
 .section-3:nth-child(2) {
-  background-image: linear-gradient(to top left, rgba(0, 0, 255, 0.034), rgba(165, 42, 42, 0.29));
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 255, 0.034),
+    rgba(165, 42, 42, 0.29)
+  );
 }
 
 .section:nth-child(1) {
@@ -147,11 +151,15 @@ h2 {
 }
 
 .gradient-img-left {
-  background-image: linear-gradient(to top right, rgba(0, 0, 255, 0.436), rgba(0, 0, 255, 0.162));    
+  background-image: linear-gradient(
+    to top right,
+    rgba(0, 0, 255, 0.436),
+    rgba(0, 0, 255, 0.162)
+  );
 }
 
 .gradient-img-left {
-  background-image: linear-gradient();  
+  background-image: linear-gradient();
 }
 
 .gradient-img-left {
@@ -168,6 +176,10 @@ h2 {
 
 .section-4 p {
   font-size: 16px;
+}
+.cards {
+  display: flex;
+  gap: 30px;
 }
 
 .card {
