@@ -138,14 +138,24 @@ h2 {
   list-style: none;
 }
 
-.section-4-img {
-  gap: 30px;
-  display: flex;
-  list-style: none;
+.section-3:nth-child(2) {
+  background-image: linear-gradient(to top left, rgba(0, 0, 255, 0.034), rgba(165, 42, 42, 0.29));
 }
 
 .section:nth-child(1) {
   flex-direction: column;
+}
+
+.gradient-img-left {
+  background-image: linear-gradient(to top right, rgba(0, 0, 255, 0.436), rgba(0, 0, 255, 0.162));    
+}
+
+.gradient-img-left {
+  background-image: linear-gradient();  
+}
+
+.gradient-img-left {
+  background-image: linear-gradient();
 }
 
 .section-2 p {
@@ -162,12 +172,13 @@ h2 {
 
 .card {
   background-color: white;
-  box-shadow: -10px -5px 10px -15px black;
+  box-shadow: -10px -5px 10px -15px rgba(0, 0, 0, 0.568);
   overflow: hidden;
   text-align: center;
   width: 270px;
   margin-bottom: 20px;
 }
+
 a .card img {
   width: 100%;
   height: auto;
