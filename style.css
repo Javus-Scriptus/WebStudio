@@ -54,6 +54,10 @@ body {
 
 /* header */
 
+ .header {
+  max-width: 100%;
+ }
+
 .header-links-left a {
   text-decoration: none;
   color: #212121;
