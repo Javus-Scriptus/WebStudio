@@ -1,69 +1,139 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="portfolio.css" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <img src="img1/Logo.png" alt="logo" />
-    <a href="index.html">Студія</a>
-    <a href="portfolio.html">Портфоліо</a>
-    <a href="index2.html">Контакти</a>
-    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-    <a href="tel:+380961111111">+38 096 111 11 11</a>
+
+  <!-- header -->
+
+  <header class="header">
+    <div class="header-container">
+      <h4 class="header-logo"><span class="logo-span">Web</span>Studio</h4>
+      <ul class="header-links-left">
+        <li class="header-link"><a class="header-content" href="main.html">Студія</a>
+        </li>
+        <li class="header-link"><a class="header-content" href="portfolio.html">Портфоліо</a></li>
+        <li class="header-link"><a class="header-content" href="#">Контакти</a></li>
+      </ul>
+      <ul class="header-links-right">
+        <li><svg class="mail-icon">
+            <use href="symbol-defs.svg#icon-mail-icon"></use>
+          </svg></li>
+        <li class="header-link"><a class="header-content" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><svg class="phone-icon">
+            <use href="symbol-defs.svg#icon-smartphone-icon"></use>
+          </svg></li>
+        <li class="header-link"><a class="header-content" href="tel:+380961111111">+380961111111</a>
+        </li>
+      </ul>
+    </div>
   </header>
+
+  <!-- main -->
+
   <main>
-    <button>Усі</button>
-    <button>Веб-сайти</button>
-    <button>Додатки</button>
-    <button>Дизайн</button>
-    <button>Маркетинг</button>
-    <img src="img2/img1.png" alt="image1" />
-    <h1>Технокряк</h1>
-    <p class="p">Веб-сайт</p>
-    <img src="img2/img2.png" alt="image2" />
-    <h1>Постер New Orlean vs Golden Star</h1>
-    <p class="p">Дизайн</p>
-    <img src="img2/img3.png" alt="image3" />
-    <h1>Ресторан Seafood</h1>
-    <p class="p">Додаток</p>
-    <img src="img2/img4.png" alt="image4" />
-    <h1>Проєкт Prime</h1>
-    <p class="p">Маркетинг</p>
-    <img src="img2/img5.png" alt="image5" />
-    <h1>Проєкт Boxes</h1>
-    <p class="p">Додаток</p>
-    <img src="img2/img6.png" alt="image6" />
-    <h1>Inspiration has no Borders</h1>
-    <p class="p">Веб-сайт</p>
-    <img src="img2/img7.png" alt="image7" />
-    <h1>Видання Limited Edition</h1>
-    <p class="p">Дизайн</p>
-    <img src="img2/img8.png" alt="image8" />
-    <h1>Проєкт LAB</h1>
-    <p class="p">Маркетинг</p>
-    <img src="img2/img9.png" alt="image9" />
-    <h1>Growing Business</h1>
-    <p class="p">Додаток</p>
+    <section class="section-1">
+      <div class="orientation-buttons">
+        <button class="orientation-button">Усі</button>
+        <button class="orientation-button">Веб-сайти</button>
+        <button class="orientation-button">Додатки</button>
+        <button class="orientation-button">Дизайн</button>
+        <button class="orientation-button">Маркетинг</button>
+      </div>
+    </section>
+    <section class="section-2">
+      <div class="cards">
+        <div class="card">
+          <img src="" alt="content">
+          <h2>Технокряк</h2>
+          <p>Веб-сайт</p>
+        </div>
+        <div class="card">
+          <img src="" alt="content">
+          <h2>Постер New Orlean vs Golden Star</h2>
+          <p>Дизайн</p>
+        </div>
+        <div class="card">
+          <img src="" alt="content">
+          <h2>Ресторан Seafood</h2>
+          <p>Додаток</p>
+        </div>
+        <div class="card">
+          <img src="" alt="content">
+          <h2>Проєкт Prime</h2>
+          <p>Маркетинг</p>
+        </div>
+        <div class="card">
+          <img src="" alt="content">
+          <h2>Проєкт Boxes</h2>
+          <p>Додаток</p>
+        </div>
+        <div class="card">
+          <img src="" alt="content">
+          <h2>Inspiration has no Borders</h2>
+          <p>Веб-сайт</p>
+        </div>
+        <div class="card">
+          <img src="" alt="content">
+          <h2>Видання Limited Edition</h2>
+          <p>Дизайн</p>
+        </div>
+        <div class="card">
+          <img src="" alt="content">
+          <h2>Проєкт LAB</h2>
+          <p>Маркетинг</p>
+        </div>
+        <div class="card">
+          <img src="" alt="content">
+          <h2>Growing Business</h2>
+          <p>Додаток</p>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
-    <p>м. Київ, пр-т Лесі Українки, 26</p>
-    <img src="img1/Logo2.png" alt="logo" />
-    <address>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <br />
-      <a href="tel:+380961111111">+38 096 111 11 11</a>
-    </address>
+
+
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <ul class="contacts">
+        <li>
+          <h4 class="footer-logo"><span class="logo-span">Web</span>Studio</h4>
+        </li>
+        <li>
+          <p class="footer-content footer-p">м. Київ, пр-т Лесі Українки, 26</p>
+        </li>
+        <li><a class="footer-content footer-a-1" href="mailto:info@devstudio.com" id="gray-color">info@devstudio.com</a>
+        </li>
+        <li><a class="footer-content footer-a-2" href="tel:+380961111111">+38 096 111 11
+            11</a></li>
+      </ul>
+      <div class="footer-left-content">
+        <div class="social-media-heading-parent">
+          <h5 class="social-media-heading">приєднуйтесь</h5>
+        </div>
+        <div class="social-media">
+          <div class="footer-icon-bg"><svg class="footer-icon f-1">
+              <use href="symbol-defs.svg#icon-instagram-icon"></use>
+            </svg></div>
+          <div class="footer-icon-bg"><svg class="footer-icon f-2">
+              <use href="symbol-defs.svg#icon-twitter-icon"></use>
+            </svg></div>
+          <div class="footer-icon-bg"><svg class="footer-icon f-3">
+              <use href="symbol-defs.svg#icon-facebook-icon"></use>
+            </svg></div>
+          <div class="footer-icon-bg"><svg class="footer-icon f-4">
+              <use href="symbol-defs.svg#icon-linkedin-icon"></use>
+            </svg></div>
+        </div>
+      </div>
   </footer>
 </body>
 
