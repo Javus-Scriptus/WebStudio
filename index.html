@@ -22,18 +22,24 @@
     <!-- header  -->
 
     <header class="header">
-        <div class="container header-container">
+        <div class="header-container">
             <h4 class="header-logo"><span class="logo-span">Web</span>Studio</h4>
             <ul class="header-links-left">
-                <li class="header-link"><a class="header-content h-link" href="main.html">Студія</a>
+                <li class="header-link"><a class="header-content" href="main.html">Студія</a>
                 </li>
-                <li class="header-link"><a class="header-content h-link" href="portfolio.html">Портфоліо</a></li>
-                <li class="header-link"><a class="header-content h-link" href="#">Контакти</a></li>
+                <li class="header-link"><a class="header-content" href="portfolio.html">Портфоліо</a></li>
+                <li class="header-link"><a class="header-content" href="#">Контакти</a></li>
             </ul>
             <ul class="header-links-right">
-                <li class="header-link"><a class="header-content h-email"
+                <li><svg class="mail-icon">
+                        <use href="symbol-defs.svg#icon-mail-icon"></use>
+                    </svg></li>
+                <li class="header-link"><a class="header-content"
                         href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="header-link"><a class="header-content h-email" href="tel:+380961111111">+380961111111</a>
+                <li><svg class="phone-icon">
+                        <use href="symbol-defs.svg#icon-smartphone-icon"></use>
+                    </svg></li>
+                <li class="header-link"><a class="header-content" href="tel:+380961111111">+380961111111</a>
                 </li>
             </ul>
         </div>
@@ -103,30 +109,27 @@
         <!-- section-3 -->
 
         <section class="section-3">
-            <!-- <div class="container"> -->
             <h2 class="h2">Чим ми займаємося</h2>
             <div class="container section-3-contents">
-                <div class="section-3-img-line">
-                    <img style="width: 370px; height: 294px;" src="img/page-1/section-3/content-1.jpg" alt="content">
-                    <div class="section-3-img-line">
-                        <h5 class="section-3-img-heading">Десктопні додатки</h5>
+                <div>
+                    <img style="width: 370px; height: 294px;" src="img/page-1/content-1.jpg" alt="content">
+                    <div class="section-3-img-stripe">
+                        <h5 class="section-3-img-heading-1">Десктопні додатки</h5>
                     </div>
                 </div>
-                <div class="section-3-img-line">
-                    <img style="width: 370px; height: 294px;" src="img/page-1/section-3/content-1.jpg" alt="content">
-                    <div>
-                        <h5 class="section-3-img-heading">Мобільні додатки</h5>
+                <div>
+                    <img style="width: 370px; height: 294px;" src="img/page-1/content-2.jpg" alt="content">
+                    <div class="section-3-img-stripe">
+                        <h5 class="section-3-img-heading-2">Мобільні додатки</h5>
                     </div>
                 </div>
-                <div class="section-3-img-line">
-                    <img style="width: 370px; height: 294px;" src="img/page-1/section-3/content-3.jpg" alt="content">
-                    <div>
-                        <h5 class="section-3-img-heading">Дизайнерські рішення</h5>
+                <div>
+                    <img style="width: 370px; height: 294px;" src="img/page-1/content-3.jpg" alt="content">
+                    <div class="section-3-img-stripe">
+                        <h5 class="section-3-img-heading-3">Дизайнерські рішення</h5>
                     </div>
                 </div>
             </div>
-
-            <!-- </div> -->
         </section>
 
         <!-- section-4 -->
@@ -136,95 +139,78 @@
             <div class="container">
                 <div class="section-4-cards">
                     <div class="section-4-card">
-                        <img src="img/page-1/section-4/dude1.jpg" alt="person1">
+                        <img src="img/page-1/dude1.jpg" alt="person1">
                         <h3 class="section-4-card-1-heading">Ігор Дем'яненко</h3>
                         <p class="section-4-card-1-text">Product Designer</p>
                         <div class="section-4-icons">
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-instagram-icon"></use>
-                            </svg>
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-twitter-icon"></use>
-                            </svg>
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-facebook-icon"></use>
-                            </svg>
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-linkedin-icon"></use>
-                            </svg>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-instagram-icon"></use>
+                                </svg></div>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-twitter-icon"></use>
+                                </svg></div>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-facebook-icon"></use>
+                                </svg></div>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-linkedin-icon"></use>
+                                </svg></div>
                         </div>
                     </div>
                     <div class="section-4-card">
-                        <img class="dude" src="img/page-1/section-4/dude2.jpg" alt="person2">
+                        <img class="dude" src="img/page-1/dude2.jpg" alt="person2">
                         <h3 class="section-4-card-2-heading">Ольга Репіна</h3>
                         <p class="section-4-card-2-text">Frontend Developer</p>
                         <div class="section-4-icons">
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-instagram-icon"></use>
-                            </svg>
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-twitter-icon"></use>
-                            </svg>
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-facebook-icon"></use>
-                            </svg>
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-linkedin-icon"></use>
-                            </svg>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-instagram-icon"></use>
+                                </svg></div>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-twitter-icon"></use>
+                                </svg></div>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-facebook-icon"></use>
+                                </svg></div>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-linkedin-icon"></use>
+                                </svg></div>
                         </div>
                     </div>
                     <div class="section-4-card">
-                        <img class="dude" src="img/page-1/section-4/dude3.jpg" alt="person3">
+                        <img class="dude" src="img/page-1/dude3.jpg" alt="person3">
                         <h3 class="section-4-card-3-heading">Микола Тарасов</h3>
                         <p class="section-4-card-3-text">Marketing</p>
                         <div class="section-4-icons">
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-instagram-icon"></use>
-                            </svg>
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-twitter-icon"></use>
-                            </svg>
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-facebook-icon"></use>
-                            </svg>
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-linkedin-icon"></use>
-                            </svg>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-instagram-icon"></use>
+                                </svg></div>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-twitter-icon"></use>
+                                </svg></div>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-facebook-icon"></use>
+                                </svg></div>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-linkedin-icon"></use>
+                                </svg></div>
                         </div>
                     </div>
-                    <div class="section-4-card"><img class="main-content" src="img/page-1/section-4/dude4.jpg"
-                            alt="person4">
+                    <div class="section-4-card"><img class="main-content" src="img/page-1/dude4.jpg" alt="person4">
                         <h3 class="section-4-card-4-heading">Михайло Єрмаков</h3>
                         <p class="section-4-card-4-text">UI Designer</p>
                         <div class="section-4-icons">
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-instagram-icon"></use>
-                            </svg>
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-twitter-icon"></use>
-                            </svg>
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-facebook-icon"></use>
-                            </svg>
-                            <div class="section-4-icon-bg"></div>
-                            <svg class="section-4-icon">
-                                <use href="symbol-defs.svg#icon-linkedin-icon"></use>
-                            </svg>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-instagram-icon"></use>
+                                </svg></div>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-twitter-icon"></use>
+                                </svg></div>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-facebook-icon"></use>
+                                </svg></div>
+                            <div class="section-4-icon-bg"><svg class="section-4-icon">
+                                    <use href="symbol-defs.svg#icon-linkedin-icon"></use>
+                                </svg></div>
                         </div>
                     </div>
                 </div>
