@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Potfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
   <!-- header -->
 
-  <header class="header">
+  <header class="header portfolio-header">
     <div class="header-container">
-      <h4 class="header-logo"><span class="logo-span">Web</span>Studio</h4>
+      <a href="index.html">
+        <h4 class="header-logo"><span class="logo-span">Web</span>Studio</h4>
+      </a>
       <ul class="header-links-left">
-        <li class="header-link"><a class="header-content" href="main.html">Студія</a>
+        <li class="header-link"><a class="header-content" href="index.html#section-3">Студія</a>
         </li>
         <li class="header-link"><a class="header-content" href="portfolio.html">Портфоліо</a></li>
-        <li class="header-link"><a class="header-content" href="#">Контакти</a></li>
+        <li class="header-link"><a class="header-content" href="#footer">Контакти</a></li>
       </ul>
       <ul class="header-links-right">
         <li><svg class="mail-icon">
@@ -38,6 +49,9 @@
   <!-- main -->
 
   <main>
+
+    <!-- section-1 -->
+
     <section class="section-1">
       <div class="orientation-buttons">
         <button class="orientation-button">Усі</button>
@@ -47,52 +61,83 @@
         <button class="orientation-button">Маркетинг</button>
       </div>
     </section>
+
+    <!-- section-2 -->
+
     <section class="section-2">
-      <div class="cards">
-        <div class="card">
-          <img src="" alt="content">
-          <h2>Технокряк</h2>
-          <p>Веб-сайт</p>
+      <div class="container portfolio-cards">
+
+        <!-- card-1 -->
+
+        <div class="card-line">
+          <div class="portfolio-card">
+            <img style="width: 370px; height: 294px;" src="img/page-2/img1.jpg" alt="content">
+            <h2 class="portfolio-card-heading">Технокряк</h2>
+            <p class="portfolio-card-text">Веб-сайт</p>
+          </div>
+
+          <!-- card-2 -->
+
+          <div class="portfolio-card">
+            <img style="width: 370px; height: 294px;" src="img/page-2/img2.jpg" alt="content">
+            <h2 class="portfolio-card-heading">Постер New Orlean vs Golden Star</h2>
+            <p class="portfolio-card-text">Дизайн</p>
+          </div>
+
+          <!-- card-3 -->
+
+          <div class="portfolio-card">
+            <img style="width: 370px; height: 294px;" src="img/page-2/img3.jpg" alt="content">
+            <h2 class="portfolio-card-heading">Ресторан Seafood</h2>
+            <p class="portfolio-card-text">Додаток</p>
+          </div>
         </div>
-        <div class="card">
-          <img src="" alt="content">
-          <h2>Постер New Orlean vs Golden Star</h2>
-          <p>Дизайн</p>
+
+        <!-- card-4 -->
+
+        <div class="card-line">
+          <div class="portfolio-card">
+            <img style="width: 370px; height: 294px;" src="img/page-2/img4.jpg" alt="content">
+            <h2 class="portfolio-card-heading">Проєкт Prime</h2>
+            <p class="portfolio-card-text">Маркетинг</p>
+          </div>
+
+          <!-- card-5 -->
+          <div class="portfolio-card">
+            <img style="width: 370px; height: 294px;" src="img/page-2/img5.jpg" alt="content">
+            <h2 class="portfolio-card-heading">Проєкт Boxes</h2>
+            <p class="portfolio-card-text">Додаток</p>
+          </div>
+
+          <!-- card-6 -->
+          <div class="portfolio-card">
+            <img style="width: 370px; height: 294px;" src="img/page-2/img6.jpg" alt="content">
+            <h2 class="portfolio-card-heading">Inspiration has no Borders</h2>
+            <p class="portfolio-card-text">Веб-сайт</p>
+          </div>
         </div>
-        <div class="card">
-          <img src="" alt="content">
-          <h2>Ресторан Seafood</h2>
-          <p>Додаток</p>
-        </div>
-        <div class="card">
-          <img src="" alt="content">
-          <h2>Проєкт Prime</h2>
-          <p>Маркетинг</p>
-        </div>
-        <div class="card">
-          <img src="" alt="content">
-          <h2>Проєкт Boxes</h2>
-          <p>Додаток</p>
-        </div>
-        <div class="card">
-          <img src="" alt="content">
-          <h2>Inspiration has no Borders</h2>
-          <p>Веб-сайт</p>
-        </div>
-        <div class="card">
-          <img src="" alt="content">
-          <h2>Видання Limited Edition</h2>
-          <p>Дизайн</p>
-        </div>
-        <div class="card">
-          <img src="" alt="content">
-          <h2>Проєкт LAB</h2>
-          <p>Маркетинг</p>
-        </div>
-        <div class="card">
-          <img src="" alt="content">
-          <h2>Growing Business</h2>
-          <p>Додаток</p>
+
+        <!-- card-7 -->
+        <div class="card-line">
+          <div class="portfolio-card">
+            <img style="width: 370px; height: 294px;" src="img/page-2/img7.jpg" alt="content">
+            <h2 class="portfolio-card-heading">Видання Limited Edition</h2>
+            <p class="portfolio-card-text">Дизайн</p>
+          </div>
+
+          <!-- card-8 -->
+          <div class="portfolio-card">
+            <img style="width: 370px; height: 294px;" src="img/page-2/img8.jpg" alt="content">
+            <h2 class="portfolio-card-heading">Проєкт LAB</h2>
+            <p class="portfolio-card-text">Маркетинг</p>
+          </div>
+
+          <!-- card-9 -->
+          <div class="portfolio-card">
+            <img style="width: 370px; height: 294px;" src="img/page-2/img9.jpg" alt="content">
+            <h2 class="portfolio-card-heading">Growing Business</h2>
+            <p class="portfolio-card-text">Додаток</p>
+          </div>
         </div>
       </div>
     </section>
@@ -101,7 +146,7 @@
 
   <!-- footer -->
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container footer-content">
       <ul class="contacts">
         <li>
@@ -134,6 +179,7 @@
             </svg></div>
         </div>
       </div>
+    </div>
   </footer>
 </body>
 
