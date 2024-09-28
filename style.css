@@ -48,6 +48,9 @@ body {
   width: 2000px;
   margin-left: auto;
   margin-right: auto;
+  /* position: sticky; */
+  /* top: 0; */
+  background-color: #ffffff;
 }
 
 section {
@@ -99,10 +102,53 @@ ul {
   font-size: 26px;
   margin-right: 93px;
   letter-spacing: 0.78px;
+  /* outline: 2px solid red; */
 }
 
 .header a {
   text-decoration: none;
+}
+
+/* .underline:after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: #2196F3;
+    top: 23px;
+    left: 0;
+    bottom: -35px;
+    border-radius: 4px;
+    width: 100%;
+} */
+
+.webstudio-underline::after {
+  content: '';
+  position: absolute;
+  width: 45.08px;
+  height: 4px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+  top: 75px;
+  bottom: 0;
+  right: 70;
+  left: 409px;
+  /* outline: 2px solid red;  */
+}
+
+.portfolio-underline::after {
+  content: '';
+  position: absolute;
+  width: 72.25px;
+  height: 4px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+  top: 75px;
+  bottom: 0;
+  right: 70;
+  left: 504px;
+  /* outline: 2px solid red;  */
 }
 
 .header-links-left {
@@ -130,8 +176,8 @@ ul {
 }
 
 .header-link:hover {
-  transform: scale(1.5);
-  transition: 0.5s ease-out;
+  /* transform: scale(1.5); */
+  /* transition: 0.5s ease-out; */
 }
 
 .header-links-right a {
@@ -142,14 +188,14 @@ ul {
   margin-left: -40px;
   font-weight: 700;
   text-decoration: none;
-  transition: 0.3s ease-out;
+  /* transition: 0.3s ease-out; */
 }
 
 .mail-icon {
   width: 16px;
   height: 12px;
   fill: #757575;
-  transition: 0.2s ease-out;
+  /* transition: 0.2s ease-out; */
 }
 
 .mail-icon:hover {
@@ -286,47 +332,29 @@ ul {
 }
 
 .section-3-img {
-  width: 370px;
-  height: 294px;
+  display: block;
+}
+
+.section-3-card {
+  position: relative;
+  display: inline-block;
 }
 
 .section-3-img-stripe {
+  position: relative;
   background-color: #2f303a;
   opacity: 80%;
   width: 100%;
   height: 70px;
-  margin-top: -74px;
+  margin-top: -69px;
 }
 
-.section-3-img-heading-1 {
+.section-3-img-heading {
   font-size: 14px;
   font-weight: 400;
   color: #ffffff;
-  padding: 27px 103.8px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  letter-spacing: 0.82px;
-}
-
-.section-3-img-heading-2 {
-  font-size: 14px;
-  font-weight: 400;
-  color: #ffffff;
-  padding: 27px 108.6px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  letter-spacing: 0.82px;
-}
-
-.section-3-img-heading-3 {
-  font-size: 14px;
-  font-weight: 400;
-  color: #ffffff;
-  padding: 27px 88.7px;
+  padding-top: 25px;
+  text-align: center;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.4px;
