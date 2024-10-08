@@ -15,6 +15,10 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
+.icon-modal-mail {
+  width: 1.3330078125em;
+}
+
 .icon-company-1 {
   width: 0.8720703125em;
 }
