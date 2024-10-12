@@ -1,6 +1,7 @@
 /* fonts */
 
-/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif; */
 
 :root {
   --heading-black: #212121;
@@ -90,7 +91,7 @@ ul {
   color: #2196f3;
 }
 
-/* header */
+/* header-beginning*/
 
 .header-container {
   width: 1158px;
@@ -108,24 +109,19 @@ ul {
   font-size: 26px;
   margin-right: 93px;
   letter-spacing: 0.78px;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
   /* outline: 2px solid red; */
 }
 
-.header a {
+.header-logo {
   text-decoration: none;
+  position: relative;
 }
 
-/* .underline:after{
-    content: '';
-    position: absolute;
-    height: 4px;
-    background-color: #2196F3;
-    top: 23px;
-    left: 0;
-    bottom: -35px;
-    border-radius: 4px;
-    width: 100%;
-} */
+.webstudio-underline {
+  position: relative;
+}
 
 .webstudio-underline::after {
   content: '';
@@ -135,11 +131,7 @@ ul {
   border: none;
   border-radius: 4px;
   background-color: #2196f3;
-  top: 75px;
-  bottom: 0;
-  right: 70;
-  left: 409px;
-  /* outline: 2px solid red;  */
+  transform: translate(-100%, 1120%);
 }
 
 .portfolio-underline::after {
@@ -150,11 +142,7 @@ ul {
   border: none;
   border-radius: 4px;
   background-color: #2196f3;
-  top: 75px;
-  bottom: 0;
-  right: 70;
-  left: 504px;
-  /* outline: 2px solid red;  */
+  transform: translate(-100%, 1120%);
 }
 
 .header-links-left {
@@ -275,7 +263,7 @@ ul {
   transition: 0.5s ease-out;
 }
 
-/* modal */
+/* modal-window */
 
 .backdrop {
   position: fixed;
@@ -283,7 +271,7 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   opacity: 1;
 }
 
@@ -310,32 +298,33 @@ ul {
   /* outline: 2px solid red; */
 }
 
-.no-scroll {
+/* .no-scroll {
   overflow: hidden;
+} */
+
+.modal-close-wraper {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 480px;
+  position: relative;
+  border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .modal-close {
   width: 18px;
   height: 18px;
-  /* padding: 6px; */
   fill: #000000;
-  border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  line-height: 1;
-  position: relative;
-  top: 8px;
-  left: 240px;
-  box-sizing: border-box;
-  z-index: 1;
-  overflow: visible;
-  display: inline-block;
-  /* outline: 2px solid red; */
+  position: absolute;
+  top: 4.5px;
+  left: 5.5px;
 }
 
 .modal-close:hover {
   fill: #2196f3;
-  transition: 0.3s ease-out;
+  transition: 0.2s ease-out;
   transform: perspective(0.8s);
 }
 
