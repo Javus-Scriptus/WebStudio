@@ -21,23 +21,34 @@
 
   <!-- header -->
 
-  <header class="header portfolio-header">
+  <header class="header">
     <div class="header-container">
       <a class="header-logo" href="index.html"><span class="logo-span">Web</span>Studio</a>
-      <ul class="header-links-left">
-        <li class="header-link"><a class="header-content" href="index.html">Студія</a></li>
-        <li class="header-link"><a class="header-content portfolio-underline" href="portfolio.html">Портфоліо</a></li>
-        <li class="header-link"><a class="header-content" href="#footer">Контакти</a></li>
+
+      <!-- header-nav -->
+
+      <ul class="header-nav">
+        <li class="header-link"><a href="index.html">Студія</a></li>
+        <li class="header-link"><a class="portfolio-underline" href="portfolio.html">Портфоліо</a></li>
+        <li class="header-link"><a href="#footer">Контакти</a></li>
       </ul>
-      <ul class="header-links-right">
-        <li><svg class="mail-icon">
-            <use href="symbol-defs.svg#icon-mail-icon"></use>
-          </svg></li>
-        <li class="header-link"><a class="header-content" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><svg class="phone-icon">
-            <use href="symbol-defs.svg#icon-smartphone-icon"></use>
-          </svg></li>
-        <li class="header-link"><a class="header-content" href="tel:+380961111111">+380961111111</a>
+
+      <!-- header emails -->
+
+      <ul class="header-emails">
+        <li class="header-link">
+          <a href="mailto:info@devstudio.com">info@devstudio.com
+            <svg class="mail-icon header-icon">
+              <use href="symbol-defs.svg#mail"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-link">
+          <a href="tel:+380961111111">+380961111111
+            <svg class="phone-icon header-icon">
+              <use href="symbol-defs.svg#smartphone"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </div>
@@ -66,183 +77,178 @@
 
         <!-- card-1 -->
 
-        <div class="card-line">
-          <div class="portfolio-card">
-            <div class="image-hover-bg">
-              <img class="portfolio-card-image" src="img/page-2/img1.jpg" alt="content">
-              <div class="image-hover-text">Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
-                та
-                сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
-                приватну особу.</div>
-            </div>
-            <h2 class="portfolio-card-heading">Технокряк</h2>
-            <p class="portfolio-card-text">Веб-сайт</p>
+        <div class="portfolio-card">
+          <div class="image-hover-bg">Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
+            та
+            сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
+            приватну особу.
           </div>
+          <img class="portfolio-card-image" src="img/page-2/img1.jpg" alt="content">
+          <h2 class="portfolio-card-heading">Технокряк</h2>
+          <p class="portfolio-card-text">Веб-сайт</p>
+        </div>
 
-          <!-- card-2 -->
+        <!-- card-2 -->
 
-          <div class="portfolio-card">
-            <div class="image-hover-bg">
-              <img class="portfolio-card-image" src="img/page-2/img2.jpg" alt="content">
-              <div class="image-hover-text">Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
-                та
-                сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
-                приватну особу.</div>
-            </div>
-            <h2 class="portfolio-card-heading">Постер New Orlean vs Golden Star</h2>
-            <p class="portfolio-card-text">Дизайн</p>
+        <div class="portfolio-card">
+          <div class="image-hover-bg">Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
+            та
+            сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
+            приватну особу.
           </div>
+          <img class="portfolio-card-image" src="img/page-2/img2.jpg" alt="content">
+          <h2 class="portfolio-card-heading">Постер New Orlean vs Golden Star</h2>
+          <p class="portfolio-card-text">Дизайн</p>
+        </div>
 
-          <!-- card-3 -->
+        <!-- card-3 -->
 
-          <div class="portfolio-card">
-            <div class="image-hover-bg">
-              <img class="portfolio-card-image" src="img/page-2/img3.jpg" alt="content">
-              <div class="image-hover-text">Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
-                та
-                сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
-                приватну особу.</div>
-            </div>
-            <h2 class="portfolio-card-heading">Ресторан Seafood</h2>
-            <p class="portfolio-card-text">Додаток</p>
+        <div class="portfolio-card">
+          <div class="image-hover-bg">Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
+            та
+            сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
+            приватну особу.
           </div>
+          <img class="portfolio-card-image" src="img/page-2/img3.jpg" alt="content">
+          <h2 class="portfolio-card-heading">Ресторан Seafood</h2>
+          <p class="portfolio-card-text">Додаток</p>
         </div>
 
         <!-- card-4 -->
 
-        <div class="card-line">
-          <div class="portfolio-card">
-            <div class="image-hover-bg">
-              <img class="portfolio-card-image" src="img/page-2/img4.jpg" alt="content">
-              <div class="image-hover-text">Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
-                та
-                сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
-                приватну особу.</div>
-            </div>
-            <h2 class="portfolio-card-heading">Проєкт Prime</h2>
-            <p class="portfolio-card-text">Маркетинг</p>
+        <div class="portfolio-card">
+          <div class="image-hover-bg">
+            Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
+            та
+            сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
+            приватну особу.
           </div>
+          <img class="portfolio-card-image" src="img/page-2/img4.jpg" alt="content">
+          <h2 class="portfolio-card-heading">Проєкт Prime</h2>
+          <p class="portfolio-card-text">Маркетинг</p>
+        </div>
 
-          <!-- card-5 -->
+        <!-- card-5 -->
 
-          <div class="portfolio-card">
-            <div class="image-hover-bg">
-              <img class="portfolio-card-image" src="img/page-2/img5.jpg" alt="content">
-              <div class="image-hover-text">Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
-                та
-                сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
-                приватну особу.</div>
-            </div>
-            <h2 class="portfolio-card-heading">Проєкт Boxes</h2>
-            <p class="portfolio-card-text">Додаток</p>
+        <div class="portfolio-card">
+          <div class="image-hover-bg">Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
+            та
+            сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
+            приватну особу.
           </div>
+          <img class="portfolio-card-image" src="img/page-2/img5.jpg" alt="content">
+          <h2 class="portfolio-card-heading">Проєкт Boxes</h2>
+          <p class="portfolio-card-text">Додаток</p>
+        </div>
 
-          <!-- card-6 -->
+        <!-- card-6 -->
 
-          <div class="portfolio-card">
-            <div class="image-hover-bg">
-              <img class="portfolio-card-image" src="img/page-2/img6.jpg" alt="content">
-              <div class="image-hover-text">Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
-                та
-                сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
-                приватну особу.</div>
-            </div>
-            <h2 class="portfolio-card-heading">Inspiration has no Borders</h2>
-            <p class="portfolio-card-text">Веб-сайт</p>
+        <div class="portfolio-card">
+          <div class="image-hover-bg">
+            Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
+            та
+            сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
+            приватну особу.
           </div>
+          <img class="portfolio-card-image" src="img/page-2/img6.jpg" alt="content">
+          <h2 class="portfolio-card-heading">Inspiration has no Borders</h2>
+          <p class="portfolio-card-text">Веб-сайт</p>
         </div>
 
         <!-- card-7 -->
 
-        <div class="card-line">
-          <div class="portfolio-card">
-            <div class="image-hover-bg">
-              <img class="portfolio-card-image" src="img/page-2/img7.jpg" alt="content">
-              <div class="image-hover-text">Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
-                та
-                сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
-                приватну особу.</div>
-            </div>
-            <h2 class="portfolio-card-heading">Видання Limited Edition</h2>
-            <p class="portfolio-card-text">Дизайн</p>
+        <div class="portfolio-card">
+          <div class="image-hover-bg">
+            Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
+            та
+            сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
+            приватну особу.
+            s
           </div>
+          <img class="portfolio-card-image" src="img/page-2/img7.jpg" alt="content">
+          <h2 class="portfolio-card-heading">Видання Limited Edition</h2>
+          <p class="portfolio-card-text">Дизайн</p>
+        </div>
 
-          <!-- card-8 -->
+        <!-- card-8 -->
 
-          <div class="portfolio-card">
-            <div class="image-hover-bg ">
-              <img class="portfolio-card-image" src="img/page-2/img8.jpg" alt="content">
-              <div class="image-hover-text">Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
-                та
-                сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
-                приватну особу.</div>
-            </div>
-            <h2 class="portfolio-card-heading">Проєкт LAB</h2>
-            <p class="portfolio-card-text">Маркетинг</p>
+        <div class="portfolio-card">
+          <div class="image-hover-bg">
+            Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
+            та
+            сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
+            приватну особу.
           </div>
+          <img class="portfolio-card-image" src="img/page-2/img8.jpg" alt="content">
+          <h2 class="portfolio-card-heading">Проєкт LAB</h2>
+          <p class="portfolio-card-text">Маркетинг</p>
+        </div>
 
-          <!-- card-9 -->
+        <!-- card-9 -->
 
-          <div class="portfolio-card">
-            <div class="image-hover-bg">
-              <img class="portfolio-card-image" src="img/page-2/img9.jpg" alt="content">
-              <div class="image-hover-text">Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
-                та
-                сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
-                приватну особу.</div>
-            </div>
-            <h2 class="portfolio-card-heading">Growing Business</h2>
-            <p class="portfolio-card-text">Додаток</p>
-          </div>
+        <div class="portfolio-card">
+          <div class="image-hover-bg">Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
+            та
+            сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
+            приватну особу</div>
+          <img class="portfolio-card-image" src="img/page-2/img9.jpg" alt="content">
+          <!-- <div class="image-hover-text">Ресурс пропонує комплексні <br> пропозиції з різним рівнем <br> функціоналу
+            та
+            сервісів. Все це <br> дозволить відвідувачу отримати <br> вичерпні відомості про компанію <br> чи
+            приватну особу.
+          </div> -->
+          <h2 class="portfolio-card-heading">Growing Business</h2>
+          <p class="portfolio-card-text">Додаток</p>
         </div>
       </div>
     </section>
   </main>
 
-
   <!-- footer -->
 
-  <footer class="footer" id="footer">
-    <div class="container footer-content">
+  <footer id="footer">
+    <div class="container footer-container">
+
+      <!-- contacts -->
+
       <ul class="contacts">
-        <li>
-          <h4 class="footer-logo"><span class="logo-span">Web</span>Studio</h4>
+        <li class="footer-logo"><span class="logo-span">Web</span>Studio</li>
+        <li><a class="footer-address" href="">м. Київ, пр-т Лесі Українки, 26</a></li>
+        <li><a href="mailto:info@devstudio.com" id="gray-color">info@devstudio.com</a>
         </li>
-        <li>
-          <p class="footer-content footer-p">м. Київ, пр-т Лесі Українки, 26</p>
-        </li>
-        <li><a class="footer-content footer-a-1" href="mailto:info@devstudio.com" id="gray-color">info@devstudio.com</a>
-        </li>
-        <li><a class="footer-content footer-a-2" href="tel:+380961111111">+38 096 111 11
+        <li><a href="tel:+380961111111">+38 096 111 11
             11</a></li>
       </ul>
-      <div class="footer-left-content">
-        <h5 class="social-media-heading">приєднуйтесь</h5>
-        <div class="social-media">
-          <div class="footer-icon-bg"><svg class="footer-icon f-1">
+
+      <!-- footer-social-media -->
+
+      <ul class="footer-social-media">
+        <li class="social-media-heading">приєднуйтесь</li>
+        <li class="footer-icons">
+          <div class="footer-icon-bg"><svg class="footer-icon">
               <use href="symbol-defs.svg#instagram"></use>
             </svg></div>
-          <div class="footer-icon-bg"><svg class="footer-icon f-2">
+          <div class="footer-icon-bg"><svg class="footer-icon">
               <use href="symbol-defs.svg#twitter"></use>
             </svg></div>
-          <div class="footer-icon-bg"><svg class="footer-icon f-3">
+          <div class="footer-icon-bg"><svg class="footer-icon">
               <use href="symbol-defs.svg#facebook"></use>
             </svg></div>
-          <div class="footer-icon-bg"><svg class="footer-icon f-4">
+          <div class="footer-icon-bg"><svg class="footer-icon">
               <use href="symbol-defs.svg#linkedin"></use>
             </svg></div>
-        </div>
-      </div>
-      <div class="subscribtion-content">
-        <h5 class="subscription-heading">Підпишіться на розсилку</h5>
+        </li>
+      </ul>
+      <ul class="subscribtion-content">
+        <li class="subscription-heading">Підпишіться на розсилку</li>
         <ul class="subscription-details">
           <li><input class="subscription-input" placeholder="E-mail" type="text"></li>
-          <li><button class="subscription-button button-open">Підписатися <svg class="subsctription-icon">
+          <li><button class="subscription-button">Підписатися <svg class="subsctription-icon">
                 <use href="symbol-defs.svg#telegram"></use>
               </svg></button>
           </li>
         </ul>
-      </div>
+      </ul>
     </div>
   </footer>
   <script src="script.js"></script>

@@ -27,24 +27,27 @@
     <header class="header">
         <div class="header-container">
             <a class="header-logo" href="index.html"><span class="logo-span">Web</span>Studio</a>
-            <ul class="header-links-left">
-                <li class="header-link"><a class="header-content webstudio-underline" href="index.html">Студія</a></li>
-                <li class="header-link"><a class="header-content" href="portfolio.html">Портфоліо</a></li>
-                <li class="header-link"><a class="header-content" href="#footer">Контакти</a></li>
+
+            <!-- header-nav -->
+
+            <ul class="header-nav">
+                <li class="header-link"><a class="webstudio-underline" href="index.html">Студія</a></li>
+                <li class="header-link"><a href="portfolio.html">Портфоліо</a></li>
+                <li class="header-link"><a href="#footer">Контакти</a></li>
             </ul>
 
             <!-- header emails -->
 
-            <ul class="header-links-right">
+            <ul class="header-emails">
                 <li class="header-link">
-                    <a class="header-content link-right" href="mailto:info@devstudio.com">info@devstudio.com
+                    <a href="mailto:info@devstudio.com">info@devstudio.com
                         <svg class="mail-icon header-icon">
                             <use href="symbol-defs.svg#mail"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="header-link">
-                    <a class="header-content link-right" href="tel:+380961111111">+380961111111
+                    <a href="tel:+380961111111">+380961111111
                         <svg class="phone-icon header-icon">
                             <use href="symbol-defs.svg#smartphone"></use>
                         </svg>
@@ -107,7 +110,7 @@
                             <p class="modal-text">Погоджуюся з розсилкою та приймаю</p>
                             <a href="">Умови договору</a>
                         </div>
-                        <button class="modal-button">Відправити</button>
+                        <button class="modal-button" data-modal-close>Відправити</button>
                     </div>
                 </div>
             </div>
@@ -210,28 +213,18 @@
 
             <section class="section-3" id="section-3">
                 <h2 class="h2">Чим ми займаємося</h2>
-                <div class="container section-3-contents">
-                    <div class="section-3-card">
-                        <img class="section-3-img" style="width: 370px; height: 294px;" src="img/page-1/content-1.jpg"
-                            alt="content">
-                        <div class="section-3-img-stripe">
-                            <h5 class="section-3-img-heading">Десктопні додатки</h5>
-                        </div>
-                    </div>
-                    <div class="section-3-card">
-                        <img class="section-3-img" style="width: 370px; height: 294px;" src="img/page-1/content-2.jpg"
-                            alt="content">
-                        <div class="section-3-img-stripe">
-                            <h5 class="section-3-img-heading">Мобільні додатки</h5>
-                        </div>
-                    </div>
-                    <div class="section-3-card">
-                        <img class="section-3-img" style="width: 370px; height: 294px;" src="img/page-1/content-3.jpg"
-                            alt="content">
-                        <div class="section-3-img-stripe">
-                            <h5 class="section-3-img-heading">Дизайнерські рішення</h5>
-                        </div>
-                    </div>
+                <div class="container">
+                    <ul class=" section-3-contents">
+                        <li class="section-3-card">
+                            <div class="section-3-img-stripe">Десктопні додатки</div>
+                        </li>
+                        <li class="section-3-card">
+                            <div class="section-3-img-stripe">Мобільні додатки</div>
+                        </li>
+                        <li class="section-3-card">
+                            <div class="section-3-img-stripe">Дизайнерські рішення</div>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
@@ -243,8 +236,8 @@
                     <div class="section-4-cards">
                         <div class="section-4-card">
                             <img src="img/page-1/dude1.jpg" alt="person1">
-                            <h3 class="section-4-card-1-heading">Ігор Дем'яненко</h3>
-                            <p class="section-4-card-1-text">Product Designer</p>
+                            <h3 class="section-4-heading">Ігор Дем'яненко</h3>
+                            <p class="section-4-text">Product Designer</p>
                             <div class="section-4-icons">
                                 <div class="section-4-icon-bg"><svg class="section-4-icon">
                                         <use href="symbol-defs.svg#instagram"></use>
@@ -262,8 +255,8 @@
                         </div>
                         <div class="section-4-card">
                             <img class="dude" src="img/page-1/dude2.jpg" alt="person2">
-                            <h3 class="section-4-card-2-heading">Ольга Репіна</h3>
-                            <p class="section-4-card-2-text">Frontend Developer</p>
+                            <h3 class="section-4-heading">Ольга Репіна</h3>
+                            <p class="section-4-text">Frontend</p>
                             <div class="section-4-icons">
                                 <div class="section-4-icon-bg"><svg class="section-4-icon">
                                         <use href="symbol-defs.svg#instagram"></use>
@@ -281,8 +274,8 @@
                         </div>
                         <div class="section-4-card">
                             <img class="dude" src="img/page-1/dude3.jpg" alt="person3">
-                            <h3 class="section-4-card-3-heading">Микола Тарасов</h3>
-                            <p class="section-4-card-3-text">Marketing</p>
+                            <h3 class="section-4-heading">Микола Тарасов</h3>
+                            <p class="section-4-text">Marketing</p>
                             <div class="section-4-icons">
                                 <div class="section-4-icon-bg"><svg class="section-4-icon">
                                         <use href="symbol-defs.svg#instagram"></use>
@@ -299,8 +292,8 @@
                             </div>
                         </div>
                         <div class="section-4-card"><img class="main-content" src="img/page-1/dude4.jpg" alt="person4">
-                            <h3 class="section-4-card-4-heading">Михайло Єрмаков</h3>
-                            <p class="section-4-card-4-text">UI Designer</p>
+                            <h3 class="section-4-heading">Михайло Єрмаков</h3>
+                            <p class="section-4-text">UI Designer</p>
                             <div class="section-4-icons">
                                 <div class="section-4-icon-bg"><svg class="section-4-icon">
                                         <use href="symbol-defs.svg#instagram"></use>
@@ -321,7 +314,7 @@
             </section>
             <section class="section-5">
                 <h2 class="h2">Постійні клієнти</h2>
-                <div class="container section-5-cards">
+                <di class="container section-5-cards">
                     <div class="section-5-card">
                         <svg class="section-5-icon s4-1">
                             <use href="symbol-defs.svg#company-1"></use>
@@ -352,56 +345,56 @@
                             <use href="symbol-defs.svg#company-6"></use>
                         </svg>
                     </div>
-                </div>
-            </section>
-    </main>
+                </di>
 
-    <!-- footer -->
+                <!-- footer start -->
 
-    <footer class="footer" id="footer">
-        <div class="container footer-content">
-            <ul class="contacts">
-                <li>
-                    <h4 class="footer-logo"><span class="logo-span">Web</span>Studio</h4>
-                </li>
-                <li>
-                    <p class="footer-content footer-p">м. Київ, пр-т Лесі Українки, 26</p>
-                </li>
-                <li><a class="footer-content footer-a-1" href="mailto:info@devstudio.com"
-                        id="gray-color">info@devstudio.com</a></li>
-                <li><a class="footer-content footer-a-2" href="tel:+380961111111">+38 096 111 11
-                        11</a></li>
-            </ul>
-            <div class="footer-left-content">
-                <h5 class="social-media-heading">приєднуйтесь</h5>
-                <div class="social-media">
-                    <div class="footer-icon-bg"><svg class="footer-icon f-1">
-                            <use href="symbol-defs.svg#instagram"></use>
-                        </svg></div>
-                    <div class="footer-icon-bg"><svg class="footer-icon f-2">
-                            <use href="symbol-defs.svg#twitter"></use>
-                        </svg></div>
-                    <div class="footer-icon-bg"><svg class="footer-icon f-3">
-                            <use href="symbol-defs.svg#facebook"></use>
-                        </svg></div>
-                    <div class="footer-icon-bg"><svg class="footer-icon f-4">
-                            <use href="symbol-defs.svg#linkedin"></use>
-                        </svg></div>
-                </div>
-            </div>
-            <div class="subscribtion-content">
-                <h5 class="subscription-heading">Підпишіться на розсилку</h5>
-                <ul class="subscription-details">
-                    <li><input class="subscription-input" placeholder="E-mail" type="text"></li>
-                    <li><button class="subscription-button button-open">Підписатися <svg class="subsctription-icon">
-                                <use href="symbol-defs.svg#telegram"></use>
-                            </svg></button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+                <footer id="footer">
+                    <div class="container footer-container">
+
+                        <!-- footer  contacts -->
+
+                        <ul class="contacts">
+                            <li class="footer-logo"><span class="logo-span">Web</span>Studio</li>
+                            <li><a class="footer-address" href="">м. Київ, пр-т Лесі Українки, 26</a></li>
+                            <li><a href="mailto:info@devstudio.com" id="gray-color">info@devstudio.com</a>
+                            </li>
+                            <li><a href="tel:+380961111111">+38 096 111 11
+                                    11</a></li>
+                        </ul>
+
+                        <!-- footer-social-media -->
+
+                        <ul class="footer-social-media">
+                            <li class="social-media-heading">приєднуйтесь</li>
+                            <li class="footer-icons">
+                                <div class="footer-icon-bg"><svg class="footer-icon">
+                                        <use href="symbol-defs.svg#instagram"></use>
+                                    </svg></div>
+                                <div class="footer-icon-bg"><svg class="footer-icon">
+                                        <use href="symbol-defs.svg#twitter"></use>
+                                    </svg></div>
+                                <div class="footer-icon-bg"><svg class="footer-icon">
+                                        <use href="symbol-defs.svg#facebook"></use>
+                                    </svg></div>
+                                <div class="footer-icon-bg"><svg class="footer-icon">
+                                        <use href="symbol-defs.svg#linkedin"></use>
+                                    </svg></div>
+                            </li>
+                        </ul>
+                        <ul class="subscribtion-content">
+                            <li class="subscription-heading">Підпишіться на розсилку</li>
+                            <ul class="subscription-details">
+                                <li><input class="subscription-input" placeholder="E-mail" type="text"></li>
+                                <li><button class="subscription-button">Підписатися <svg class="subsctription-icon">
+                                            <use href="symbol-defs.svg#telegram"></use>
+                                        </svg></button>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </footer>
+                <script src="script.js"></script>
 </body>
 
 </html>
