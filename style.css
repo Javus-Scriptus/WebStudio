@@ -1035,15 +1035,15 @@ footer p {
   letter-spacing: 0.54px;
   font-size: 18px;
   font-weight: 400;
-  cursor: default;  
+  cursor: default;
   /* outline: 2px solid red; */
 }
 
 .image-hover-bg:hover {
   background-color: rgba(33, 150, 243, 1);
-  display: block;
   color: #ffffff;
-  z-index: 5;
+  /* display: block; */
+  /* z-index: 5; */
 }
 
 /* .image-hover-text {
