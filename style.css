@@ -1038,23 +1038,6 @@ footer p {
   transform: scale(1.02);
 }
 
-/* img hover */
-
-/* .image-hover-bg::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0);
-  transition: 0.4s ease-out;
-} */
-
-/* .image-hover-bg:hover::before {
-  background-color: rgba(33, 150, 243, 0.9);
-} */
-
 .image-hover-bg {
   /* opacity: 0; */
   /* visibility: hidden; */
@@ -1084,30 +1067,6 @@ footer p {
   /* display: block; */
   /* z-index: 5; */
 }
-
-/* .image-hover-text {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 147px;
-  left: 186px;
-  transform: translate(-50%, -50%);
-  padding: 63px 24px;
-  color: #ffffff;
-  transition: 0.3s ease-out;
-  line-height: 28px;
-  letter-spacing: 0.54px;
-  font-size: 18px;
-  font-weight: 400;
-  opacity: 0;
-  cursor: default;
-  background-color: var(--hover-blue);
-} */
-
-/* .image-hover-text:hover {
-  display: flex;
-  opacity: 1;
-} */
 
 .portfolio-card-image {
   display: block;
