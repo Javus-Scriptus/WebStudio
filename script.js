@@ -38,3 +38,14 @@
     document.body.classList.toggle("no-scroll");
   }
 })();
+
+// Добавляем класс .open для модального окна
+// const modal = document.getElementById('modal-window'); // Замени на свой ID модалки
+
+// function openModal() {
+//   modal.classList.add('open');
+// }
+
+// function closeModal() {
+//   modal.classList.remove('open');
+// }
