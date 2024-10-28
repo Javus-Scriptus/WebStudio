@@ -33,6 +33,7 @@ html {
 
 body {
   max-width: 100%;
+  /* overflow: scroll; */
   /* overflow-x: hidden; */
 }
 
@@ -363,7 +364,7 @@ header a:hover {
   position: absolute;
   top: 55%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.9);
   width: 540px;
   height: 630px;
   display: flex;
@@ -376,8 +377,13 @@ header a:hover {
   z-index: 1000;
   box-shadow: 0px 1.5px 0px 1px rgba(0, 0, 0, 0.08);
   /* transform: perspective(600px); */
-  /* transition: transform 0.8s linear; */
+  transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* outline: 2px solid red; */
+}
+
+.modal.is-open {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .backdrop.is-hidden {
@@ -1023,6 +1029,7 @@ footer p {
 /* portfolio section-2 */
 
 .portfolio-card {
+  overflow: hidden;
   position: relative;
   margin: 10px;
   display: flex;
@@ -1038,18 +1045,44 @@ footer p {
   transform: scale(1.02);
 }
 
-.image-hover-bg {
-  /* opacity: 0; */
-  /* visibility: hidden; */
-  /* display: none; */
+.hover-bg-container {
+  outline: 2px solid red;
+  background-color: black;
+  background-image: url(img/page-2/img1.jpg);
+  overflow: hidden;
+  width: 370px;
+  height: 294px;
+  /* height: 77.7%; */
+  /* width: 100%; */
+  outline: 2px solid red;
+  /* transform: translateY(-150%); */
+  background-color: var(--hover-blue);
+  display: inline-block;
   position: absolute;
-  width: 100%;
-  height: 77.7%;
+  height: 0;
   top: 147px;
   left: 186px;
   left: 1px;
   top: 1px;
-  /* transform: translate(-50.3%, -47%); */
+  transform: translate(0, 160%);
+}
+
+.hover-bg-container:hover .image-hover-bg {
+  height: 100%;
+}
+
+.image-hover-bg {
+  /* width: 100%; */
+  /* height: 100%; */
+  /* height: 1px; */
+  /* display: inline-block;
+  position: absolute;
+  height: 0;
+  top: 147px;
+  left: 186px;
+  left: 1px;
+  top: 1px;
+  transform: translate(0, 160%); */
   padding: 63px 24px;
   color: transparent;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1058,20 +1091,29 @@ footer p {
   font-size: 18px;
   font-weight: 400;
   cursor: default;
+  z-index: 0;
   /* outline: 2px solid red; */
 }
 
 .image-hover-bg:hover {
-  background-color: rgba(33, 150, 243, 1);
+  transition-delay: 200ms;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(33, 150, 243, 0.85);
   color: #ffffff;
-  /* display: block; */
-  /* z-index: 5; */
+  /* height: 77.7%; */
+  width: 370px;
+  height: 294px;
+  transform: translate(0, 0);
 }
 
 .portfolio-card-image {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.portfolio-card-image:hover .image-hover-bg {
+  height: 77.7%;
 }
 
 /* card elements */
@@ -1090,4 +1132,77 @@ footer p {
   color: #757575;
   letter-spacing: 0.6px;
   margin: 4px 24px 20px 24px;
+}
+
+/* test card */
+
+.test-heading {
+  font-size: 18px;
+  font-weight: 900;
+  color: #212121;
+  letter-spacing: 1.18px;
+  margin: 20px 24px 4px 24px;
+  margin-top: 350px;
+}
+
+.test-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #757575;
+  letter-spacing: 0.6px;
+  margin: 4px 24px 20px 24px;
+  /* margin-top: 150px; */
+}
+
+.test-card {
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 404px;
+  transition: all 250ms ease-out;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  background: url(img/page-2/img1.jpg);
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.test-bg-container {
+  outline: 2px solid red;
+  z-index: 20;
+  position: absolute;
+  width: 370px;
+  height: 294px;
+}
+
+.test-bg-container:hover .test-bg {
+  width: 370px;
+  height: 294px;
+  transition: all 450ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0px);
+  display: inline-block;
+  overflow: hidden;
+}
+
+.test-bg {
+  padding: 63px 24px;
+  color: transparent;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  line-height: 28px;
+  letter-spacing: 0.54px;
+  font-size: 18px;
+  font-weight: 400;
+  height: 0;
+  transform: translateY(300px);
+  /* outline: 2px solid blue; */
+  /* display: none; */
+}
+
+.test-bg:hover {
+  background: #2196f3e6;
+  color: #ffffff;
 }

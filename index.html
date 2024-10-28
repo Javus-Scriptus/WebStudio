@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="icon" href="img/website-icon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -393,7 +394,24 @@
                         </ul>
                     </div>
                 </footer>
-                <script src="script.js"></script>
+                <script>
+                    (() => {
+                        const refs = {
+                            openModalBtn: document.querySelector("[data-modal-open]"),
+                            closeModalBtn: document.querySelector("[data-modal-close]"),
+                            modal: document.querySelector("[data-modal]"),
+                        };
+
+                        refs.openModalBtn.addEventListener("click", toggleModal);
+                        refs.closeModalBtn.addEventListener("click", toggleModal);
+
+                        function toggleModal() {
+                            refs.modal.classList.toggle("is-open")
+                            refs.modal.classList.toggle("is-hidden");
+                            document.body.classList.toggle("no-scroll");
+                        }
+                    })();
+                </script>
 </body>
 
 </html>
