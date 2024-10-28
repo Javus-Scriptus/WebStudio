@@ -1089,7 +1089,7 @@ footer p {
   /* padding: 63px 24px; */
   color: transparent;
   /* transition-delay: 2s; */
-  transition: all 450ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 550ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 28px;
   letter-spacing: 0.54px;
   font-size: 0;
