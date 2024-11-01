@@ -292,6 +292,9 @@ header a:hover {
 .heading1-container {
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .h1 {
@@ -319,32 +322,36 @@ header a:hover {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-1-button:hover {
   transform: scale(1.2);
-  animation: shadow-hover 500ms linear forwards;
+}
+
+.section-1-button:hover::after {
+  content: '↓';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  right: 100px;
+  animation: arrow-hover 500ms linear forwards infinite;
   animation-direction: alternate-reverse;
 }
 
-/* @keyfames shadow-hover {
+@keyframes arrow-hover {
   0% {
-    box-shadow: -8px 8px 24px -9px rgba(250, 8, 8, 1);
+    transform: translate(0, 0);
+  }
+  12.5% {
+    transform: translate(100px, 0);
   }
   25% {
-    box-shadow: 10px -11px 24px -9px rgba(255, 68, 0, 1);
+    transform: translate();
   }
-  50% {
-    box-shadow: 31px 0px 28px -9px rgba(247, 255, 0, 1);
-  }
-  75% {
-    box-shadow: 25px 0px 90px -9px rgba(85, 255, 0, 1);
-  }
-  100% {
-    box-shadow: -18px 18px 54px -24px rgba(0, 187, 255, 1);
-  }
-} */
+}
 
 /* modal-window */
 
