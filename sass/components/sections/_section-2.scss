@@ -1,0 +1,54 @@
+.section-2-cards {
+  width: 1170px;
+  height: 248px;
+  display: flex;
+  gap: 30px;
+  /* outline: 2px solid red; */
+}
+
+.section-2-card {
+  width: 270px;
+  height: 248px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-2-card:hover {
+  animation: fadeOut 2s linear 1;
+}
+
+.section-2-card-top-content {
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  /* outline: 2px solid red; */
+}
+
+.s2-img {
+  width: 70px;
+  height: 70px;
+  margin: 25px 100px;
+  /* fill: #212121; */
+}
+
+.section-2-card-heading {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #212121;
+  font-weight: 900;
+  letter-spacing: 0.42px;
+}
+
+.section-2-card-text {
+  font-size: 14px;
+  color: #757575;
+  font-weight: 400;
+  letter-spacing: 0.42px;
+}
+
+.section-2-img {
+  margin: 25px 101.54px 25px 101.5px;
+  width: 66.96px;
+  height: 70px;
+}

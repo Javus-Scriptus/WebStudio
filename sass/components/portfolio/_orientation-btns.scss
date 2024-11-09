@@ -1,0 +1,32 @@
+.orientation-buttons {
+  width: 567px;
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 144px;
+  margin-bottom: 50px;
+  /* margin: 94px 513px 0px 512px; */
+}
+
+.orientation-button {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+  padding: 6px 22px;
+  color: #212121;
+  background-color: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.orientation-button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #2196f3;
+  font-weight: 500;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+}   
