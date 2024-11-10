@@ -9,6 +9,16 @@
   height: 294px;
   /* outline: 2px solid red; */
   display: flex;
+  &:nth-of-type(1) {
+    background-image: url('./img/webstudio/content-1.jpg');
+  }
+  &:nth-of-type(2) {
+    background-image: url('./img/webstudio/content-2.jpg');
+  }
+
+  &:nth-of-type(3) {
+    background-image: url('./img/webstudio/content-3.jpg');
+  }
 }
 
 .section-3-card:hover {

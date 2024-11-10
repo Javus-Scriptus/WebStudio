@@ -302,6 +302,7 @@ header a:hover {
 }
 
 .ws-section-1 {
+  background: url("../css/img/webstudio/section-1-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 200px;
@@ -321,7 +322,7 @@ header a:hover {
   gap: 20px;
 }
 
-.h1 {
+h1 {
   font-size: 44px;
   text-transform: uppercase;
   text-align: center;
@@ -358,10 +359,7 @@ header a:hover {
 
 .section-1-button:hover::after {
   content: "";
-  background-image: url("img/webstudio/keyframes-arrow.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("../css/img/webstudio/keyframes-arrow.png") no-repeat center center/cover;
   width: 35px;
   height: 35px;
   position: absolute;
@@ -703,6 +701,15 @@ header a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.section-3-card:nth-of-type(1) {
+  background-image: url("./img/webstudio/content-1.jpg");
+}
+.section-3-card:nth-of-type(2) {
+  background-image: url("./img/webstudio/content-2.jpg");
+}
+.section-3-card:nth-of-type(3) {
+  background-image: url("./img/webstudio/content-3.jpg");
 }
 
 .section-3-card:hover {
@@ -1158,26 +1165,6 @@ footer p {
           transform: scale(1.05);
 }
 
-.portfolio-card {
-  overflow: hidden;
-  position: relative;
-  margin: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 370px;
-  height: 404px;
-  cursor: default;
-  -webkit-transition: all 250ms ease-out;
-  transition: all 250ms ease-out;
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-}
-
 .portfolio-card:hover {
   -webkit-box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);
           box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);
@@ -1186,6 +1173,7 @@ footer p {
 }
 
 .portfolio-card {
+  overflow: hidden;
   position: relative;
   overflow: hidden;
   position: relative;
@@ -1206,6 +1194,7 @@ footer p {
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
+  cursor: default;
 }
 
 .portfolio-bg-container {

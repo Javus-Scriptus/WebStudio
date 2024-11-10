@@ -1,22 +1,10 @@
-.portfolio-card {
-  overflow: hidden;
-  position: relative;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  width: 370px;
-  height: 404px;
-  cursor: default;
-  transition: all 250ms ease-out;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-}
-
 .portfolio-card:hover {
   box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);
   transform: scale(1.02);
 }
 
 .portfolio-card {
+  overflow: hidden;
   position: relative;
   overflow: hidden;
   position: relative;
@@ -30,6 +18,8 @@
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
+  cursor: default;
+  // outline: 2px solid red;
 }
 
 .portfolio-bg-container {

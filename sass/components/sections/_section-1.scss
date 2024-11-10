@@ -1,4 +1,5 @@
 .ws-section-1 {
+  background: url('../css/img/webstudio/section-1-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 200px;
@@ -13,7 +14,7 @@
   gap: 20px;
 }
 
-.h1 {
+h1 {
   font-size: 44px;
   text-transform: uppercase;
   text-align: center;
@@ -48,11 +49,8 @@
 
 .section-1-button:hover::after {
   content: '';
-  // background-image: url('img/webstudio/keyframes-arrow.png') no-repeat center center / cover;
-  background-image: url('img/webstudio/keyframes-arrow.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url('../css/img/webstudio/keyframes-arrow.png') no-repeat center center / cover;
+  // background-image: url('css/img/webstudio/keyframes-arrow.png');
   width: 35px;
   height: 35px;
   position: absolute;
