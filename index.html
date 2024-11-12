@@ -21,7 +21,7 @@
   <header class="header">
     <div class="header-container">
       <a class="header-logo" href="index.html"><span class="logo-span">Web</span>Studio</a>
-
+      <div class="burger-menu"><span class="burger"></span></div>
       <!-- header-nav -->
 
       <ul class="header-nav">
@@ -388,6 +388,7 @@
           </div>
         </footer>
         <script>
+          // modal
           (() => {
             const refs = {
               openModalBtn: document.querySelector("[data-modal-open]"),
@@ -412,6 +413,12 @@
               }, 500); // Час має збігатися з CSS transition
             }
           })();
+
+          // burger menu
+          document.querySelector('.burger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.header-nav').classList.toggle('open');
+          })
           /* (() => {
               const refs = {
                   openModalBtn: document.querySelector("[data-modal-open]"),

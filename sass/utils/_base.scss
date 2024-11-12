@@ -3,22 +3,17 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  max-width: 100% !important;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  font-family: 'Roboto', sans-serif;
+  max-width: 100% !important;
 }
 
 body {
-  max-width: 100%;
+  max-width: 100% !important;
   /* overflow: scroll; */
   /* overflow-x: hidden; */
   &::-webkit-scrollbar {
