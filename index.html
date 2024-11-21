@@ -54,56 +54,56 @@
 
   <!-- main -->
 
-  <!-- section-1 -->
+  <!-- section-1 hero-section -->
 
   <main class="main">
-    <section class="section-1 ws-section-1" id="main-page">
+    <section class="hero" id="main-page">
       <div class="container">
-        <div class="heading1-container">
-          <h1>Ефективні рішення для <br> вашого бізнесу</h1>
-          <button class="section-1-button btn-open" data-modal-open>Замовити послугу</button>
+        <div class="hero__heading-container">
+          <h1 class="hero__heading">Ефективні рішення для <br> вашого бізнесу</h1>
+          <button class="hero__btn btn-open" data-modal-open>Замовити послугу</button>
         </div>
 
         <!-- modal-window -->
 
         <div class="backdrop is-hidden" data-modal>
           <div class="modal" id="modal-window">
-            <div class="modal-close-wraper">
-              <svg class="modal-close" id="button-close" data-modal-close>
+            <div class="modal__close-wraper">
+              <svg class="modal__close-icon" id="button-close" data-modal-close>
                 <use href="symbol-defs.svg#modal-close"></use>
               </svg>
             </div>
-            <h2 class="modal-heading">Залиште свої дані, ми вам передзвонимо</h2>
-            <label class="modal-label">Ім'я
-              <svg class="modal-icon">
+            <h2 class="modal__heading">Залиште свої дані, ми вам передзвонимо</h2>
+            <label class="modal__label">Ім'я
+              <svg class="modal__icon">
                 <use href="symbol-defs.svg#modal-human"></use>
               </svg>
-              <input class="modal-input" id="name" type="text">
+              <input class="modal__input" id="name" type="text">
             </label>
-            <label class="modal-label">Телефон
-              <svg class="modal-icon">
+            <label class="modal__label">Телефон
+              <svg class="modal__icon">
                 <use href="symbol-defs.svg#modal-cellphone"></use>
               </svg>
-              <input class="modal-input" id="phone" type="text">
+              <input class="modal__input" id="phone" type="text">
             </label>
 
-            <label class="modal-label">Пошта
-              <svg class="modal-icon">
+            <label class="modal__label">Пошта
+              <svg class="modal__icon">
                 <use href="symbol-defs.svg#modal-mail"></use>
               </svg>
-              <input class="modal-input" id="email" type="text">
+              <input class="modal__input" id="email" type="text">
             </label>
 
-            <label class="modal-label">Коментар
-              <textarea class="modal-textarea" placeholder="Введіть текст" name="commentar" id="" cols="30"
+            <label class="modal__label">Коментар
+              <textarea class="modal__textarea" placeholder="Введіть текст" name="commentar" id="" cols="30"
                 rows="10"></textarea>
             </label>
-            <div class="modal-confirm">
-              <input class="modal-radio" placeholder="" type="checkbox">
-              <p class="modal-text">Погоджуюся з розсилкою та приймаю</p>
-              <a href="">Умови договору</a>
+            <div class="modal__confirm">
+              <input class="modal__radio" type="checkbox">
+              <p class="modal__text">Погоджуюся з розсилкою та приймаю</p>
+              <a class="modal__link" href="">Умови договору</a>
             </div>
-            <button class="modal-button" data-modal-close>Відправити</button>
+            <button class="modal__button" data-modal-close>Відправити</button>
           </div>
         </div>
       </div>
@@ -155,52 +155,58 @@
       </div>
     </div>
 
-    <!-- section-2 -->
+    <!-- article-section section-2 -->
 
-    <section class="section-2">
-      <div class="container section-2-cards">
-        <div class="section-2-card">
-          <div class="section-2-card-top-content">
-            <svg class="antenna s2-img">
+    <section class="article">
+      <ul class="container article__cards">
+        <li class="article__card">
+          <div class="article__top-content">
+            <svg class="article__icon antenna">
               <use href="symbol-defs.svg#antenna"></use>
             </svg>
           </div>
-          <h3 class="section-2-card-heading">УВАГА ДО ДЕТАЛЕЙ</h3>
-          <p class="section-2-card-text">Ідейні міркування, і навіть початок <br> повсякденної роботи
+          <h3 class="article__heading">УВАГА ДО ДЕТАЛЕЙ</h3>
+          <p class="article__text">Ідейні міркування, і навіть початок <br> повсякденної роботи
             з формування <br> позиції.</p>
-        </div>
-        <div class="section-2-card">
-          <div class="section-2-card-top-content">
-            <svg class="clock s2-img">
+        </li>
+
+        <!-- card -->
+        <li class="article__card">
+          <div class="article__top-content">
+            <svg class="article__icon clock">
               <use href="symbol-defs.svg#clock"></use>
             </svg>
           </div>
-          <h3 class="section-2-card-heading">ПУНКТУАЛЬНІСТЬ</h3>
-          <p class="section-2-card-text">Завдання організації, особливо рамки і місце навчання
+          <h3 class="article__heading">ПУНКТУАЛЬНІСТЬ</h3>
+          <p class="article__text">Завдання організації, особливо рамки <br> і місце навчання
             кадрів тягне у себе.</p>
-        </div>
-        <div class="section-2-card">
-          <div class="section-2-card-top-content">
-            <svg class="diagram s2-img">
+        </li>
+
+        <!-- card -->
+        <li class="article__card">
+          <div class="article__top-content">
+            <svg class="article__icon diagram">
               <use href="symbol-defs.svg#diagram"></use>
             </svg>
           </div>
-          <h3 class="section-2-card-heading">ПЛАНУВАННЯ</h3>
-          <p class="section-2-card-text">Так само консультація з широким <br> активом значною мірою
+          <h3 class="article__heading">ПЛАНУВАННЯ</h3>
+          <p class="article__text">Так само консультація з широким <br> активом значною мірою
             зумовлює.</p>
-        </div>
-        <div class="section-2-card">
-          <div class="section-2-card-top-content">
-            <svg class="astronaut s2-img">
+        </li>
+
+        <!-- card -->
+        <li class="article__card">
+          <div class="article__top-content">
+            <svg class="article__icon astronaut">
               <use href="symbol-defs.svg#astronaut"></use>
             </svg>
           </div>
-          <h3 class="section-2-card-heading">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-          <p class="section-2-card-text">Значимість цих проблем настільки <br> очевидна, що
+          <h3 class="article__heading">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+          <p class="article__text">Значимість цих проблем настільки <br> очевидна, що
             реалізація
             планових <br> завдань.</p>
-        </div>
-      </div>
+        </li>
+      </ul>
 
       <!-- section-3 -->
 
