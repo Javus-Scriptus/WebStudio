@@ -1,0 +1,115 @@
+.portfolio {
+  &__btns-wrapper {
+    width: 567px;
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 144px;
+    margin-bottom: 50px;
+    /* margin: 94px 513px 0px 512px; */
+  }
+
+  &__btn {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.48px;
+    padding: 6px 22px;
+    color: #212121;
+    background-color: #f5f4fa;
+    border: none;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      cursor: pointer;
+      color: #ffffff;
+      background-color: #2196f3;
+      font-weight: 500;
+      box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.6);
+      transform: scale(1.05);
+    }
+  }
+
+  &__card {
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    height: 404px;
+    transition: all 250ms ease-out;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: default;
+    // outline: 2px solid red;
+
+    &:hover {
+      box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);
+      transform: scale(1.02);
+    }
+  }
+
+  &__bg-container {
+    /* outline: 2px solid red; */
+    z-index: 20;
+    position: absolute;
+    width: 370px;
+    height: 294px;
+
+    &:hover .portfolio__bg {
+      width: 370px;
+      height: 294px;
+      /* transition: all 450ms cubic-bezier(0.4, 0, 0.2, 1); */
+      transform: translateY(0px);
+      display: inline-block;
+      overflow: hidden;
+      font-size: 18px;
+      padding: 63px 24px;
+    }
+  }
+
+  &__bg {
+    /* padding: 63px 24px; */
+    color: transparent;
+    /* transition-delay: 2s; */
+    transition: all 550ms cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 28px;
+    letter-spacing: 0.54px;
+    font-size: 0;
+    font-weight: 400;
+    height: 0;
+    transform: translateY(300px);
+    /* outline: 2px solid blue; */
+    /* display: none; */
+
+    &:hover {
+      background: #2196f3e6;
+      color: #ffffff;
+      /* transition-delay: 0.2s; */
+    }
+  }
+
+  &__heading {
+    font-size: 18px;
+    font-weight: 900;
+    color: #212121;
+    letter-spacing: 1.18px;
+    margin: 20px 24px 4px 24px;
+    margin-top: 328px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+    letter-spacing: 0.6px;
+    margin: 4px 24px 20px 24px;
+  }
+}
