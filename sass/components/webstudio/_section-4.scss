@@ -1,17 +1,19 @@
 .team {
   background-color: #f5f4fa;
 
+  &__heading {
+    @extend %h2-styles;
+  }
+
   &__cards {
-    display: flex;
+    @extend %standard_center;
     width: 1170px;
     height: 428px;
     gap: 30px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   &__card {
-    display: flex;
+    @extend %standard_center;
     flex-direction: column;
     width: 270px;
     height: 100%;
@@ -19,30 +21,20 @@
     box-shadow: -10px -5px 10px -14px rgba(0, 0, 0, 0.568);
   }
 
-  .dude {
-    width: 100%;
-    height: 260px;
-  }
-
-  &__heading {
+  &__name {
     font-size: 16px;
     color: #212121;
     /* margin: 30px 62px 10px 62px; */
-    margin-left: auto;
-    margin-right: auto;
+    @extend %standard_center;
     /* margin-bottom: auto; */
     margin-top: 30px;
     letter-spacing: 0.48px;
   }
 
-  &__text {
+  &__position {
     font-size: 16px;
     color: #757575;
-    /* margin: 0px 91px 16px 92px; */
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-top: auto;
+    @extend %standard_center;
     letter-spacing: 0.48px;
   }
 

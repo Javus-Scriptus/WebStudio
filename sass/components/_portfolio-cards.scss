@@ -1,10 +1,8 @@
 .portfolio {
   &__btns-wrapper {
-    width: 567px;
-    display: flex;
+    width: 580px;
     gap: 8px;
-    margin-left: auto;
-    margin-right: auto;
+   @extend %standard_center;
     margin-top: 144px;
     margin-bottom: 50px;
     /* margin: 94px 513px 0px 512px; */

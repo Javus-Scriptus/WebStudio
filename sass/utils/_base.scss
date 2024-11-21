@@ -27,16 +27,6 @@ section {
   margin-right: auto;
 }
 
-.h2 {
-  font-size: 36px;
-  font-weight: 900;
-  color: #212121;
-  margin-bottom: 50px;
-  letter-spacing: 1.08px;
-  text-align: center;
-  padding-top: 94px;
-}
-
 ul {
   list-style: none;
 }
@@ -47,14 +37,7 @@ ul {
 }
 
 .container {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 94px;
+  @extend %standard_center;
   width: 1170px;
-  align-items: center;
-  // justify-content: center;
-  /* outline: 2px solid red; */
-  display: flex;
-  flex-wrap: wrap;
+// outline: 2px solid red;
 }

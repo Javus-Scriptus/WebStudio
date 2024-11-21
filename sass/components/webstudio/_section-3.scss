@@ -1,6 +1,6 @@
 .business {
   &__cards {
-    display: flex;
+    @extend %standard_center;
     gap: 30px;
     list-style: none;
   }
@@ -9,7 +9,7 @@
     width: 370px;
     height: 294px;
     /* outline: 2px solid red; */
-    display: flex;
+    @extend %standard_center;
     &:nth-of-type(1) {
       background-image: url('./img/webstudio/content-1.jpg');
     }
@@ -40,15 +40,6 @@
   }
 
   &__heading {
-    color: #212121;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    @extend %h2-styles;
   }
 }

@@ -6,9 +6,7 @@
   margin-bottom: 94px;
 
   .hero__heading-container {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
+    @extend %standard_center;
     flex-direction: column;
     gap: 20px;
   }

@@ -2,7 +2,8 @@
   &__cards {
     width: 1170px;
     height: 248px;
-    display: flex;
+    // display: flex;
+    @extend %standard_center;
     gap: 30px;
     /* outline: 2px solid red; */
   }

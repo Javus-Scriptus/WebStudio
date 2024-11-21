@@ -1,9 +1,8 @@
 .clients {
   &__cards {
-    display: flex;
+    @extend %standard_center;
     gap: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-bottom: 94px;
     /* outline: 2px solid red; */
   }
 
@@ -28,16 +27,7 @@
   }
 
   &__heading {
-    color: #212121;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    @extend %h2-styles;
   }
 
   &__icon {
