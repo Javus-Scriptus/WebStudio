@@ -1,6 +1,6 @@
 .business {
   &__cards {
-    @extend %standard_center;
+    @extend %standard-center;
     gap: 30px;
     list-style: none;
   }
@@ -9,16 +9,19 @@
     width: 370px;
     height: 294px;
     /* outline: 2px solid red; */
-    @extend %standard_center;
+    @extend %standard-center;
     &:nth-of-type(1) {
       background-image: url('./img/webstudio/content-1.jpg');
+      @extend %background-styles;
     }
     &:nth-of-type(2) {
       background-image: url('./img/webstudio/content-2.jpg');
+      @extend %background-styles;
     }
 
     &:nth-of-type(3) {
       background-image: url('./img/webstudio/content-3.jpg');
+      @extend %background-styles;
     }
 
     &:hover {
@@ -28,15 +31,15 @@
   }
 
   &__stripe {
+    @extend %text-styles;
     background-color: #2f303a;
+    color: #ffffff;
     opacity: 80%;
     width: 100%;
     height: 70px;
     align-self: flex-end;
-    color: white;
     padding-left: 100px;
     padding-top: 25px;
-    letter-spacing: 0.6px;
   }
 
   &__heading {

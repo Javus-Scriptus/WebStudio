@@ -1,12 +1,14 @@
 .hero {
+  @extend %background-styles;
   background: url('../css/img/webstudio/section-1-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center center;
   padding: 200px;
   margin-bottom: 94px;
 
   .hero__heading-container {
-    @extend %standard_center;
+    @extend %standard-center;
     flex-direction: column;
     gap: 20px;
   }
@@ -45,8 +47,8 @@
 
     &:hover::after {
       content: '';
-      background: url('../css/img/webstudio/keyframes-arrow.png') no-repeat center center / cover;
-      // background-image: url('css/img/webstudio/keyframes-arrow.png');
+      background: url('../css/img/webstudio/keyframes-arrow.png');
+      // @extend %background-styles;
       width: 35px;
       height: 35px;
       position: absolute;

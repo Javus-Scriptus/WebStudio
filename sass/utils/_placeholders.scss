@@ -1,4 +1,4 @@
-%standard_center {
+%standard-center {
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -9,6 +9,13 @@
   flex-wrap: wrap;
 }
 
+%background-styles {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-clip: border-box;
+}
+
 %h2-styles {
   font-size: 36px;
   font-weight: 900;
@@ -17,4 +24,12 @@
   letter-spacing: 1.08px;
   text-align: center;
   padding-top: 94px;
+}
+
+%text-styles {
+  letter-spacing: 0.90px;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
 }

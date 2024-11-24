@@ -1,6 +1,6 @@
 .clients {
   &__cards {
-    @extend %standard_center;
+    @extend %standard-center;
     gap: 30px;
     padding-bottom: 94px;
     /* outline: 2px solid red; */

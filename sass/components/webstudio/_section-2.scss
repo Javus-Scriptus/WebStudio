@@ -3,7 +3,7 @@
     width: 1170px;
     height: 248px;
     // display: flex;
-    @extend %standard_center;
+    @extend %standard-center;
     gap: 30px;
     /* outline: 2px solid red; */
   }
@@ -12,7 +12,11 @@
     width: 270px;
     height: 248px;
     display: flex;
-    flex-direction: column;
+    @extend %standard-center;
+    justify-content: start;
+    align-items: start;
+    // flex-direction: column;
+    // @extend %standardk-center;
 
     &:hover {
       animation: fadeOut 2s linear 1;
@@ -39,7 +43,7 @@
     font-size: 14px;
     color: #757575;
     font-weight: 400;
-    letter-spacing: 0.42px;
+    letter-spacing: 0.38px;
   }
 
   &__icon {

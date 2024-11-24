@@ -55,7 +55,7 @@ ul {
   --fill-icons-gray: #afb1b8;
 }
 
-.portfolio__btns-wrapper, .footer, .clients__cards, .team__position, .team__name, .team__card, .team__cards, .business__card, .business__cards, .article__cards, .hero .hero__heading-container, .header, .container {
+.portfolio__card, .portfolio__btns-wrapper, .footer, .clients__cards, .team__position, .team__name, .team__card, .team__cards, .business__card, .business__cards, .article .article__card, .article__cards, .hero .hero__heading-container, .header, .container {
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -73,6 +73,13 @@ ul {
       flex-wrap: wrap;
 }
 
+.footer__btn:hover::after, .business__card:nth-of-type(3), .business__card:nth-of-type(2), .business__card:nth-of-type(1), .hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-clip: border-box;
+}
+
 .clients__heading, .team__heading, .business__heading {
   font-size: 36px;
   font-weight: 900;
@@ -81,6 +88,14 @@ ul {
   letter-spacing: 1.08px;
   text-align: center;
   padding-top: 94px;
+}
+
+.team__position, .team__name, .business__stripe {
+  letter-spacing: 0.9px;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -246,8 +261,6 @@ ul {
 
 .hero {
   background: url("../css/img/webstudio/section-1-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 200px;
   margin-bottom: 94px;
 }
@@ -292,7 +305,7 @@ ul {
 }
 .hero .hero__btn:hover::after {
   content: "";
-  background: url("../css/img/webstudio/keyframes-arrow.png") no-repeat center center/cover;
+  background: url("../css/img/webstudio/keyframes-arrow.png");
   width: 35px;
   height: 35px;
   position: absolute;
@@ -548,10 +561,12 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 .article .article__card:hover {
   -webkit-animation: fadeOut 2s linear 1;
@@ -575,7 +590,7 @@ ul {
   font-size: 14px;
   color: #757575;
   font-weight: 400;
-  letter-spacing: 0.42px;
+  letter-spacing: 0.38px;
 }
 .article__icon {
   margin: 25px 101.54px 25px 101.5px;
@@ -609,15 +624,14 @@ ul {
 }
 .business__stripe {
   background-color: #2f303a;
+  color: #ffffff;
   opacity: 80%;
   width: 100%;
   height: 70px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  color: white;
   padding-left: 100px;
   padding-top: 25px;
-  letter-spacing: 0.6px;
 }
 .team {
   background-color: #f5f4fa;
@@ -639,17 +653,13 @@ ul {
           box-shadow: -10px -5px 10px -14px rgba(0, 0, 0, 0.568);
 }
 .team__name {
-  font-size: 16px;
   color: #212121;
-  /* margin: 30px 62px 10px 62px; */
-  /* margin-bottom: auto; */
   margin-top: 30px;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.9px;
 }
 .team__position {
-  font-size: 16px;
   color: #757575;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.9px;
 }
 .team__icons {
   display: -webkit-box;
@@ -673,8 +683,6 @@ ul {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* outline: 2px solid red; */
   cursor: pointer;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
 }
 .team__icon-bg {
   width: 54px;
@@ -896,7 +904,7 @@ ul {
 }
 .footer__btn:hover::after {
   content: "";
-  background: url("../img/page-1/keyframes-arrow.png") no-repeat center center/cover;
+  background: url("../img/page-1/keyframes-arrow.png");
   width: 35px;
   height: 35px;
   position: absolute;
@@ -946,16 +954,7 @@ ul {
 .portfolio__card {
   overflow: hidden;
   position: relative;
-  overflow: hidden;
-  position: relative;
   margin: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 370px;
   height: 404px;
   -webkit-transition: all 250ms ease-out;
@@ -963,9 +962,17 @@ ul {
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
   cursor: default;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 .portfolio__card:hover {
   -webkit-box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);

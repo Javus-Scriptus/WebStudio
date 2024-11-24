@@ -2,7 +2,7 @@
   &__btns-wrapper {
     width: 580px;
     gap: 8px;
-   @extend %standard_center;
+    @extend %standard-center;
     margin-top: 144px;
     margin-bottom: 50px;
     /* margin: 94px 513px 0px 512px; */
@@ -33,19 +33,17 @@
   &__card {
     overflow: hidden;
     position: relative;
-    overflow: hidden;
-    position: relative;
     margin: 10px;
-    display: flex;
-    flex-direction: column;
     width: 370px;
     height: 404px;
     transition: all 250ms ease-out;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     background-repeat: no-repeat;
-    margin-left: auto;
-    margin-right: auto;
     cursor: default;
+    @extend %standard-center;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
     // outline: 2px solid red;
 
     &:hover {
