@@ -5,46 +5,56 @@
     @extend %h2-styles;
   }
 
-  &__cards {
-    @extend %standard-center;
-    width: 1170px;
-    height: 428px;
-    gap: 30px;
-  }
+  // &__cards {
+  //   @extend %standard-center;
+  //   // width: 1170px;
+  //   height: 428px;
+  //   gap: 30px;
+  // }
 
   &__card {
-    @extend %standard-center;
+    // @extend %standard-center;
+    display: flex;
     flex-direction: column;
-    width: 270px;
+    // width: 270px;
+    width: 22%;
     height: 100%;
     background-color: #ffffff;
+    gap: 15px;
     box-shadow: -10px -5px 10px -14px rgba(0, 0, 0, 0.568);
   }
 
+  &__img {
+    width: 100%;
+  }
+
   &__name {
+    margin-top: 15px;
     color: #212121;
     @extend %standard-center;
     @extend %text-styles;
-    margin-top: 30px;
-    letter-spacing: 0.90px;
+    // margin-top: 30px;
+    letter-spacing: 0.9px;
   }
 
   &__position {
     color: #757575;
     @extend %standard-center;
     @extend %text-styles;
-    letter-spacing: 0.90px;
+    letter-spacing: 0.9px;
   }
 
   &__icons {
-    display: flex;
-    gap: 22px;
-    width: 206px;
+    @extend %standard-center;
+    // display: flex;
+    // gap: 22px;
+    // width: 206px;
+    width: 80%;
     height: 44px;
-    margin-left: 32px;
-    margin-right: 32px;
+    // margin-left: 32px;
+    // margin-right: 32px;
     margin-bottom: 30px;
-    gap: 24px;
+  //   gap: 24px;
   }
 
   &__icon {

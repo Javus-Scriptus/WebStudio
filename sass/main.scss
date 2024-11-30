@@ -2,6 +2,7 @@
 @import './utils/variables';
 @import './utils/placeholders';
 @import './utils/mixins';
+
 @import './components/header';
 @import './components/webstudio/section-1';
 @import './components/webstudio/section-2';
@@ -11,3 +12,4 @@
 @import './components/footer';
 @import './components/portfolio-cards';
 @import './utils/keyframes.scss';
+@import './components/adaptive';

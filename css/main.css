@@ -12,10 +12,12 @@
 html {
   scroll-behavior: smooth;
   max-width: 100% !important;
+  overflow-x: hidden;
 }
 
 body {
   max-width: 100% !important;
+  overflow-x: hidden;
   /* overflow: scroll; */
   /* overflow-x: hidden; */
 }
@@ -39,7 +41,11 @@ ul {
 }
 
 .container {
-  width: 1170px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80vw;
+  overflow: hidden;
 }
 
 :root {
@@ -55,7 +61,7 @@ ul {
   --fill-icons-gray: #afb1b8;
 }
 
-.portfolio__card, .portfolio__btns-wrapper, .footer, .clients__cards, .team__position, .team__name, .team__card, .team__cards, .business__card, .business__cards, .article .article__card, .article__cards, .hero .hero__heading-container, .header, .container {
+.portfolio__card, .portfolio__btns-wrapper, .footer, .clients__cards, .team__icons, .team__position, .team__name, .business__card, .business__cards, .hero .hero__btn, .hero .hero__heading-container, .header, .container {
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -261,6 +267,7 @@ ul {
 
 .hero {
   background: url("../css/img/webstudio/section-1-bg.png");
+  background-size: cover;
   padding: 200px;
   margin-bottom: 94px;
 }
@@ -293,8 +300,6 @@ ul {
   white-space: nowrap;
   letter-spacing: 0.96px;
   margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -549,33 +554,32 @@ ul {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.article__cards {
-  width: 1170px;
-  height: 248px;
-  gap: 30px;
-  /* outline: 2px solid red; */
+.article {
+  max-width: 100%;
 }
-.article .article__card {
-  width: 270px;
-  height: 248px;
+.article .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.article__card {
+  width: 22%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.article .article__card:hover {
+.article__card:hover {
   -webkit-animation: fadeOut 2s linear 1;
           animation: fadeOut 2s linear 1;
 }
 .article__top-content {
   background-color: #f5f4fa;
-  width: 270px;
   height: 120px;
+  width: 100%;
   /* outline: 2px solid red; */
 }
 .article__heading {
@@ -598,6 +602,18 @@ ul {
   height: 70px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .article .container {
+    width: 90vw;
+  }
+  .article__card {
+    width: 100%;
+  }
+  .article__card__heading {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .business__cards {
   gap: 30px;
   list-style: none;
@@ -636,25 +652,27 @@ ul {
 .team {
   background-color: #f5f4fa;
 }
-.team__cards {
-  width: 1170px;
-  height: 428px;
-  gap: 30px;
-}
 .team__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 270px;
+  width: 22%;
   height: 100%;
   background-color: #ffffff;
+  gap: 15px;
   -webkit-box-shadow: -10px -5px 10px -14px rgba(0, 0, 0, 0.568);
           box-shadow: -10px -5px 10px -14px rgba(0, 0, 0, 0.568);
 }
+.team__img {
+  width: 100%;
+}
 .team__name {
+  margin-top: 15px;
   color: #212121;
-  margin-top: 30px;
   letter-spacing: 0.9px;
 }
 .team__position {
@@ -662,16 +680,9 @@ ul {
   letter-spacing: 0.9px;
 }
 .team__icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 22px;
-  width: 206px;
+  width: 80%;
   height: 44px;
-  margin-left: 32px;
-  margin-right: 32px;
   margin-bottom: 30px;
-  gap: 24px;
 }
 .team__icon {
   fill: #afb1b8;
@@ -1258,5 +1269,27 @@ ul {
   }
   100% {
     opacity: 1;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    width: 95vw;
+  }
+  .team__card {
+    width: 48%;
+    margin-top: 30px;
+  }
+  .team__img {
+    height: 70%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .container {
+    width: 95vw;
+  }
+  .team__card {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }/*# sourceMappingURL=main.css.map */

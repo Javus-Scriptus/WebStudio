@@ -10,10 +10,12 @@
 html {
   scroll-behavior: smooth;
   max-width: 100% !important;
+  overflow-x: hidden;
 }
 
 body {
   max-width: 100% !important;
+  overflow-x: hidden;
   /* overflow: scroll; */
   /* overflow-x: hidden; */
   &::-webkit-scrollbar {
@@ -38,6 +40,10 @@ ul {
 
 .container {
   @extend %standard-center;
-  width: 1170px;
-// outline: 2px solid red;
+  justify-content: space-between;
+  // width: 1170px;
+  width: 80vw;
+  overflow: hidden;
+  // outline: 2px solid red;
 }
+
