@@ -80,7 +80,7 @@ ul {
 .footer__btn:hover::after, .business__card:nth-of-type(3), .business__card:nth-of-type(2), .business__card:nth-of-type(1), .hero {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-clip: border-box;
 }
 
@@ -103,15 +103,20 @@ ul {
 }
 
 .header {
+  width: 100vw;
   padding-top: 24px;
   padding-bottom: 24px;
-  width: 2000px;
   position: fixed;
   top: 0;
   background-color: #ffffff;
   z-index: 999;
   -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+.header .container {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 .header__logo {
   color: #000000;
@@ -187,7 +192,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 100px;
   list-style: none;
   margin-left: 318px;
 }
@@ -578,6 +582,15 @@ ul {
   background-color: #f5f4fa;
   height: 120px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   /* outline: 2px solid red; */
 }
 .article__heading {
@@ -600,18 +613,6 @@ ul {
   height: 70px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .article .container {
-    width: 90vw;
-  }
-  .article__card {
-    width: 100%;
-  }
-  .article__card__heading {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 .business__cards {
   gap: 30px;
   list-style: none;
@@ -1281,6 +1282,38 @@ ul {
   .container {
     width: 95vw;
   }
+  .header {
+    position: static;
+  }
+  .header__logo {
+    margin: 0;
+  }
+  .header__nav {
+    margin-left: auto;
+  }
+  .header__emails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    outline: 2px solid green;
+  }
+  .hero__heading {
+    font-size: 26px !important;
+  }
+  .article__card {
+    width: 48%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .business {
+    display: none;
+  }
   .team__card {
     width: 48%;
     margin-top: 30px;
@@ -1297,13 +1330,37 @@ ul {
   .container {
     width: 95vw;
   }
+  .header__logo {
+    margin: 0;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__emails {
+    display: none;
+  }
+  .hero__heading {
+    font-size: 26px !important;
+  }
+  .article__card {
+    width: 100%;
+  }
+  .article__heading {
+    text-align: center;
+  }
+  .article__text {
+    margin-bottom: 30px;
+  }
+  .business {
+    display: none;
+  }
   .team__card {
     width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
   }
   .clients__card {
-    width: 47%;
+    width: 46%;
     height: 117px;
   }
 }/*# sourceMappingURL=main.css.map */
