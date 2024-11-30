@@ -10,12 +10,12 @@
 html {
   scroll-behavior: smooth;
   max-width: 100% !important;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 body {
   max-width: 100% !important;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   /* overflow: scroll; */
   /* overflow-x: hidden; */
   &::-webkit-scrollbar {

@@ -15,6 +15,13 @@
       height: 70%;
     }
   }
+
+  .clients {
+    &__card {
+      width: 30%;
+      height: 113px;
+    }
+  }
 }
 
 // mobile
@@ -29,6 +36,13 @@
       width: 100%;
       margin-top: 15px;
       margin-bottom: 15px;
+    }
+  }
+
+  .clients {
+    &__card {
+      width: 47%;
+      height: 117px;
     }
   }
 }

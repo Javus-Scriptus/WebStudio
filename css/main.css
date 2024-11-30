@@ -12,12 +12,10 @@
 html {
   scroll-behavior: smooth;
   max-width: 100% !important;
-  overflow-x: hidden;
 }
 
 body {
   max-width: 100% !important;
-  overflow-x: hidden;
   /* overflow: scroll; */
   /* overflow-x: hidden; */
 }
@@ -723,8 +721,17 @@ ul {
   /* outline: 2px solid red; */
 }
 .clients__card {
-  width: 170px;
-  height: 92px;
+  width: 14%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
@@ -744,9 +751,8 @@ ul {
   fill: #2196f3;
 }
 .clients__icon {
-  width: 100px;
-  height: 60px;
-  margin: 16px 32px;
+  width: 60%;
+  height: 65%;
   fill: #afb1b8;
   -webkit-transition: all 250ms ease-out;
   transition: all 250ms ease-out;
@@ -1282,6 +1288,10 @@ ul {
   .team__img {
     height: 70%;
   }
+  .clients__card {
+    width: 30%;
+    height: 113px;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .container {
@@ -1291,5 +1301,9 @@ ul {
     width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+  .clients__card {
+    width: 47%;
+    height: 117px;
   }
 }/*# sourceMappingURL=main.css.map */
