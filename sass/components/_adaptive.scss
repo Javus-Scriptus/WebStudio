@@ -15,8 +15,14 @@
       margin-left: auto;
     }
 
+    &__email {
+      // outline: 2px solid red;
+      width: 180px;
+    }
+
     &__emails {
       flex-direction: column;
+      gap: 10px;
     }
   }
 
@@ -60,6 +66,37 @@
     &__card {
       width: 30%;
       height: 113px;
+    }
+  }
+
+  .footer {
+    gap: 8.75%;
+    // 1740 width with gap
+
+    .container {
+      width: 75%;
+      text-align: center;
+      justify-content: space-between;
+      outline: 2px solid red;
+    }
+
+    &__container {
+      // display: none;
+    }
+
+    &__contacts {
+      width: 50%;
+    }
+
+    &__social-media {
+      width: 50%;
+    }
+
+    &__subscribtion {
+    }
+
+    &__interaction {
+      flex-direction: column;
     }
   }
 }
@@ -152,5 +189,9 @@
       width: 46%;
       height: 117px;
     }
+  }
+
+  .footer {
+    flex-direction: column;
   }
 }

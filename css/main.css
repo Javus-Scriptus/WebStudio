@@ -106,7 +106,6 @@ ul {
   width: 100vw;
   padding-top: 24px;
   padding-bottom: 24px;
-  position: fixed;
   top: 0;
   background-color: #ffffff;
   z-index: 999;
@@ -137,7 +136,8 @@ ul {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
-  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header__link {
   color: #212121;
@@ -195,8 +195,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
-  margin-left: 318px;
+  margin-left: auto;
 }
 .header__email {
   color: #757575;
@@ -771,7 +770,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer__contacts {
   display: -webkit-box;
@@ -866,11 +867,10 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer__interaction {
   display: -webkit-box;
@@ -1294,11 +1294,15 @@ ul {
   .header__nav {
     margin-left: auto;
   }
+  .header__email {
+    width: 180px;
+  }
   .header__emails {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 10px;
   }
   .hero {
     background-position: center;
@@ -1327,6 +1331,29 @@ ul {
   .clients__card {
     width: 30%;
     height: 113px;
+  }
+  .footer {
+    gap: 8.75%;
+  }
+  .footer .container {
+    width: 75%;
+    text-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    outline: 2px solid red;
+  }
+  .footer__contacts {
+    width: 50%;
+  }
+  .footer__social-media {
+    width: 50%;
+  }
+  .footer__interaction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -1392,5 +1419,11 @@ ul {
   .clients__card {
     width: 46%;
     height: 117px;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */

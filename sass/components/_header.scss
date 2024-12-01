@@ -4,7 +4,7 @@
   padding-bottom: 24px;
   // width: 2000px;
   @extend %standard-center;
-  position: fixed;
+  // position: fixed;
   top: 0;
   background-color: #ffffff;
   z-index: 999;
@@ -33,7 +33,8 @@
   &__nav {
     display: flex;
     gap: 50px;
-    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__link {
@@ -90,9 +91,9 @@
 
   &__emails {
     display: flex;
+    margin-left: auto;
     // gap: 100px;
-    list-style: none;
-    margin-left: 318px;
+    // margin-left: 318px;
   }
 
   &__email {

@@ -3,10 +3,10 @@
   @extend %standard-center;
   padding-bottom: 60px;
   background-color: #2f303a;
-
+  
   &__container {
     display: flex;
-    gap: 70px;
+    justify-content: space-between;
   }
 
   &__contacts {
@@ -94,8 +94,12 @@
 
   &__subscription {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    // width: 900px;
+    // flex-direction: column;
+    // gap: 20px;
   }
 
   &__interaction {
@@ -107,6 +111,7 @@
   &__input {
     border: 2px solid #ffffff30;
     width: 358px;
+    // width: 60%;
     height: 50px;
     border-radius: 4px;
     color: #ffffff;
@@ -138,6 +143,7 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    // width: 33%;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
