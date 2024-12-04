@@ -7,8 +7,9 @@
   }
 
   &__card {
-    width: 31.9%;
+    width: 31%;
     height: 294px;
+    // width: 31.9%;
     /* outline: 2px solid red; */
     @extend %standard-center;
     &:nth-of-type(1) {

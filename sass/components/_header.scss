@@ -2,8 +2,8 @@
   width: 100vw;
   padding-top: 24px;
   padding-bottom: 24px;
-  // width: 2000px;
   @extend %standard-center;
+  // width: 2000px;
   // position: fixed;
   top: 0;
   background-color: #ffffff;
@@ -92,7 +92,7 @@
   &__emails {
     display: flex;
     margin-left: auto;
-    // gap: 100px;
+    gap: 100px;
     // margin-left: 318px;
   }
 

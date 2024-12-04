@@ -1,4 +1,4 @@
-// tablet
+// TODO tablet
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .container {
     width: 95vw;
@@ -27,14 +27,20 @@
   }
 
   .hero {
-    @extend %background-styles;
+    // @extend %background-styles;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    outline: 2px solid green;
+    // outline: 2px solid red;
+    padding: 0;
 
-    &__heading {
-      font-size: 26px !important;
+    // &__heading {
+    //  font-size: 3.6% !important;
+    // }
+
+    .modal {
+      width: 450px;
+      height: 609px;
     }
   }
 
@@ -77,26 +83,27 @@
       width: 75%;
       text-align: center;
       justify-content: space-between;
-      outline: 2px solid red;
     }
 
-    &__container {
-      // display: none;
+    &__heading {
+      margin: 0;
     }
 
     &__contacts {
-      width: 50%;
+      width: 30%;
+      margin: 0;
     }
 
     &__social-media {
-      width: 50%;
-    }
-
-    &__subscribtion {
+      width: 30%;
+      margin: 0;
     }
 
     &__interaction {
       flex-direction: column;
+      // margin-left: 150px;
+      margin-left: 30%;
+      margin-top: 40px;
     }
   }
 
@@ -105,18 +112,22 @@
   }
 }
 
-// mobile
+// TODO mobile
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .container {
     width: 95vw;
   }
 
   .header {
+    display: flex;
+    justify-content: space-between;
+
     .burger {
       display: block;
       width: 30px;
       height: 30px;
       position: relative;
+      margin-left: auto;
       // outline: 2px solid red;
 
       &::before {
@@ -158,8 +169,15 @@
   }
 
   .hero {
+    padding: 0;
+
     &__heading {
       font-size: 26px !important;
+    }
+
+    .modal {
+      width: 450px;
+      height: 609px;
     }
   }
 
@@ -197,7 +215,23 @@
   }
 
   .footer {
-    flex-direction: column;
+    &__container {
+      flex-direction: column;
+      gap: 60px;
+      text-align: center;
+    }
+
+    &__interaction {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+    }
+
+    &__heading {
+      margin: 0;
+    }
   }
 
   .portfolio__card {

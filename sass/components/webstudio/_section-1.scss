@@ -116,7 +116,8 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    margin-left: 480px;
+    // margin-left: 480px;
+    margin-left: auto;
     position: relative;
     border: 2px solid rgba(0, 0, 0, 0.1);
   }
@@ -146,6 +147,7 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 20px;
+    width: 80%;
   }
 
   &__label {
@@ -157,11 +159,14 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    // outline: 2px solid red;
+    width: 85%;
   }
 
   &__input {
-    width: 448px;
+    // width: 448px;
     height: 58px;
+    width: 100%;
     padding-left: 42px;
     border: 2px solid rgba(33, 33, 33, 0.2);
     font-size: 12px;
@@ -169,6 +174,7 @@
     outline: none;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    margin-top: 6px;
     /* margin-top: 4px; */
 
     &:hover {
@@ -193,7 +199,7 @@
   }
 
   &__textarea {
-    width: 448px;
+    width: 100%;
     height: 120px;
     padding: 12px 349px 94px 16px;
     font-size: 12px;
@@ -208,6 +214,7 @@
     border-radius: 5px;
     outline: none;
     cursor: pointer;
+    margin-top: 6px;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
@@ -222,6 +229,8 @@
     margin-top: 10px;
     margin-right: 20px;
     height: 24px;
+    width: 85%;
+    // outline: 2px solid red;
   }
 
   &__radio {
@@ -236,7 +245,8 @@
   }
 
   &__text {
-    font-size: 14px;
+    font-size: 12px;
+    width: 65%;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.42px;
@@ -245,7 +255,8 @@
   }
 
   &__link {
-    font-size: 14px;
+    font-size: 12px;
+    width: 20%;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.42px;
@@ -281,5 +292,3 @@
 }
 
 // adaptive
-
-

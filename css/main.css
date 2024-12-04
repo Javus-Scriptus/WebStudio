@@ -196,6 +196,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
+  gap: 100px;
 }
 .header__email {
   color: #757575;
@@ -394,7 +395,7 @@ ul {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  margin-left: 480px;
+  margin-left: auto;
   position: relative;
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
@@ -425,6 +426,7 @@ ul {
   text-align: center;
   font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
+  width: 80%;
 }
 .modal__label {
   font-size: 12px;
@@ -440,10 +442,11 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 85%;
 }
 .modal__input {
-  width: 448px;
   height: 58px;
+  width: 100%;
   padding-left: 42px;
   border: 2px solid rgba(33, 33, 33, 0.2);
   font-size: 12px;
@@ -452,6 +455,7 @@ ul {
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  margin-top: 6px;
   /* margin-top: 4px; */
 }
 .modal__input:hover {
@@ -473,7 +477,7 @@ ul {
   fill: #2196f3;
 }
 .modal__textarea {
-  width: 448px;
+  width: 100%;
   height: 120px;
   padding: 12px 349px 94px 16px;
   font-size: 12px;
@@ -488,6 +492,7 @@ ul {
   border-radius: 5px;
   outline: none;
   cursor: pointer;
+  margin-top: 6px;
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -503,6 +508,7 @@ ul {
   margin-top: 10px;
   margin-right: 20px;
   height: 24px;
+  width: 85%;
 }
 .modal__radio {
   width: 16px;
@@ -515,7 +521,8 @@ ul {
   right: 205px; */
 }
 .modal__text {
-  font-size: 14px;
+  font-size: 12px;
+  width: 65%;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.42px;
@@ -523,7 +530,8 @@ ul {
   /* outline: 2px solid red; */
 }
 .modal__link {
-  font-size: 14px;
+  font-size: 12px;
+  width: 20%;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.42px;
@@ -621,7 +629,7 @@ ul {
   list-style: none;
 }
 .business__card {
-  width: 31.9%;
+  width: 31%;
   height: 294px;
   /* outline: 2px solid red; */
 }
@@ -685,6 +693,7 @@ ul {
   width: 80%;
   height: 44px;
   margin-bottom: 30px;
+  gap: 24px;
 }
 .team__icon {
   fill: #afb1b8;
@@ -698,7 +707,7 @@ ul {
   cursor: pointer;
 }
 .team__icon-bg {
-  width: 54px;
+  width: 34px;
   height: 34px;
   border-radius: 50px;
   -webkit-transition: all 0.3s ease-out;
@@ -763,8 +772,7 @@ ul {
 }
 
 .footer {
-  width: 2000px;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
   background-color: #2f303a;
 }
 .footer__container {
@@ -842,6 +850,15 @@ ul {
   cursor: pointer;
   width: 44px;
   height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -861,8 +878,6 @@ ul {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  margin-top: 12px;
-  margin-left: 12px;
 }
 .footer__subscription {
   display: -webkit-box;
@@ -874,11 +889,10 @@ ul {
   margin-right: auto;
 }
 .footer__interaction {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 12px;
-  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer__input {
   border: 2px solid rgba(255, 255, 255, 0.1882352941);
@@ -935,7 +949,7 @@ ul {
   -webkit-animation: arrow-hover 6s infinite linear;
           animation: arrow-hover 6s infinite linear;
 }
-.footer__subscription-icon {
+.footer__interaction-icon {
   width: 24px;
   height: 24px;
   fill: #ffffff;
@@ -1334,12 +1348,13 @@ ul {
   }
   .hero {
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    outline: 2px solid green;
+    padding: 0;
   }
-  .hero__heading {
-    font-size: 26px !important;
+  .hero .modal {
+    width: 450px;
+    height: 609px;
   }
   .article__card {
     width: 48%;
@@ -1369,19 +1384,25 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    outline: 2px solid red;
+  }
+  .footer__heading {
+    margin: 0;
   }
   .footer__contacts {
-    width: 50%;
+    width: 30%;
+    margin: 0;
   }
   .footer__social-media {
-    width: 50%;
+    width: 30%;
+    margin: 0;
   }
   .footer__interaction {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 30%;
+    margin-top: 40px;
   }
   .portfolio__card {
     width: 48%;
@@ -1391,11 +1412,20 @@ ul {
   .container {
     width: 95vw;
   }
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .header .burger {
     display: block;
     width: 30px;
     height: 30px;
     position: relative;
+    margin-left: auto;
   }
   .header .burger::before {
     content: "";
@@ -1427,8 +1457,15 @@ ul {
   .header__emails {
     display: none;
   }
+  .hero {
+    padding: 0;
+  }
   .hero__heading {
     font-size: 26px !important;
+  }
+  .hero .modal {
+    width: 450px;
+    height: 609px;
   }
   .article__card {
     width: 100%;
@@ -1451,11 +1488,30 @@ ul {
     width: 46%;
     height: 117px;
   }
-  .footer {
+  .footer__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 60px;
+    text-align: center;
+  }
+  .footer__interaction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__heading {
+    margin: 0;
   }
   .portfolio__card {
     width: 100%;
