@@ -6,16 +6,14 @@
   margin: 0;
   list-style-type: none;
   font-family: "Roboto", sans-serif;
-  max-width: 100% !important;
 }
 
 html {
   scroll-behavior: smooth;
-  max-width: 100% !important;
+  outline: 2px solid green;
 }
 
 body {
-  max-width: 100% !important;
   /* overflow: scroll; */
   /* overflow-x: hidden; */
 }
@@ -44,6 +42,7 @@ ul {
           justify-content: space-between;
   width: 80vw;
   overflow: hidden;
+  outline: 2px solid red;
 }
 
 :root {
@@ -59,7 +58,7 @@ ul {
   --fill-icons-gray: #afb1b8;
 }
 
-.portfolio__card, .portfolio__btns-wrapper, .footer, .clients__cards, .team__icons, .team__position, .team__name, .business__card, .business__cards, .hero .hero__btn, .hero .hero__heading-container, .header, .container {
+.portfolio__card, .portfolio__btns-wrapper, .footer, .clients__cards, .team__icons, .team__position, .team__name, .team__cards, .business__card, .business__cards, .hero .hero__btn, .hero .hero__heading-container, .header, .container {
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -271,9 +270,9 @@ ul {
 }
 
 .hero {
+  max-width: 100%;
   background: url("../css/img/webstudio/section-1-bg.png");
   background-size: cover;
-  padding: 200px;
   margin-bottom: 94px;
 }
 .hero .hero__heading-container {
@@ -624,8 +623,7 @@ ul {
 }
 
 .business__cards {
-  width: 100%;
-  gap: 30px;
+  gap: 3.5%;
   list-style: none;
 }
 .business__card {
@@ -661,6 +659,10 @@ ul {
 }
 .team {
   background-color: #f5f4fa;
+  max-width: 100%;
+}
+.team__cards {
+  gap: 4%;
 }
 .team__card {
   display: -webkit-box;
@@ -728,6 +730,9 @@ ul {
   fill: #ffffff;
 }
 
+.clients {
+  max-width: 100%;
+}
 .clients__cards {
   gap: 30px;
   padding-bottom: 94px;

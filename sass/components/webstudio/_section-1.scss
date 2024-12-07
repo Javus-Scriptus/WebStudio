@@ -1,8 +1,9 @@
 .hero {
   @extend %background-styles;
+  max-width: 100%;
   background: url('../css/img/webstudio/section-1-bg.png');
   background-size: cover;
-  padding: 200px;
+  // padding: 200px;
   margin-bottom: 94px;
 
   .hero__heading-container {

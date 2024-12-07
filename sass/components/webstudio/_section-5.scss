@@ -1,4 +1,6 @@
 .clients {
+max-width: 100%;
+
   &__cards {
     @extend %standard-center;
     gap: 30px;
