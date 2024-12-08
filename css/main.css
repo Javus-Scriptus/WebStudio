@@ -13,10 +13,6 @@ html {
   outline: 2px solid green;
 }
 
-body {
-  /* overflow: scroll; */
-  /* overflow-x: hidden; */
-}
 body::-webkit-scrollbar {
   display: none;
 }
@@ -280,7 +276,6 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
 }
 .hero .hero__heading {
   font-size: 44px;
@@ -385,9 +380,9 @@ ul {
   z-index: 1000;
   -webkit-box-shadow: 0px 1.5px 0px 1px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 1.5px 0px 1px rgba(0, 0, 0, 0.08);
-  /* transform: perspective(600px); */
   -webkit-transition: top 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: top 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transform: perspective(600px); */
   /* outline: 2px solid red; */
 }
 .modal__close-wraper {
@@ -654,7 +649,7 @@ ul {
   height: 70px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding-left: 135px;
+  padding-left: 50%;
   padding-top: 25px;
 }
 .team {
@@ -1328,92 +1323,7 @@ ul {
     opacity: 1;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .container {
-    width: 95vw;
-  }
-  .header {
-    position: static;
-  }
-  .header__logo {
-    margin: 0;
-  }
-  .header__nav {
-    margin-left: auto;
-  }
-  .header__email {
-    width: 180px;
-  }
-  .header__emails {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 10px;
-  }
-  .hero {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 0;
-  }
-  .hero .modal {
-    width: 450px;
-    height: 609px;
-  }
-  .article__card {
-    width: 48%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  .business {
-    display: none;
-  }
-  .team__card {
-    width: 48%;
-    margin-top: 30px;
-  }
-  .team__img {
-    height: 70%;
-  }
-  .clients__card {
-    width: 30%;
-    height: 113px;
-  }
-  .footer {
-    gap: 8.75%;
-  }
-  .footer .container {
-    width: 75%;
-    text-align: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .footer__heading {
-    margin: 0;
-  }
-  .footer__contacts {
-    width: 30%;
-    margin: 0;
-  }
-  .footer__social-media {
-    width: 30%;
-    margin: 0;
-  }
-  .footer__interaction {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-left: 30%;
-    margin-top: 40px;
-  }
-  .portfolio__card {
-    width: 48%;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) {
   .container {
     width: 95vw;
   }
@@ -1469,7 +1379,7 @@ ul {
     font-size: 26px !important;
   }
   .hero .modal {
-    width: 450px;
+    width: 93.75%;
     height: 609px;
   }
   .article__card {
@@ -1490,7 +1400,7 @@ ul {
     margin-bottom: 15px;
   }
   .clients__card {
-    width: 46%;
+    width: 45%;
     height: 117px;
   }
   .footer__container {
@@ -1530,5 +1440,176 @@ ul {
   }
   .modal {
     top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 95vw;
+  }
+  .header {
+    position: static;
+  }
+  .header__logo {
+    margin: 0;
+  }
+  .header__nav {
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__email {
+    width: 180px;
+  }
+  .header__emails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .burger {
+    display: none;
+  }
+  .hero {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+  }
+  .hero .modal {
+    width: 58.6%;
+    height: 609px;
+  }
+  .article__card {
+    width: 48%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .business {
+    display: none;
+  }
+  .team__card {
+    width: 48%;
+    margin-top: 30px;
+  }
+  .team__img {
+    height: 70%;
+  }
+  .clients__card {
+    width: 30%;
+    height: 113px;
+  }
+  .footer {
+    gap: 8.75%;
+  }
+  .footer .container {
+    width: 75%;
+    text-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__heading {
+    margin: 0;
+  }
+  .footer__contacts {
+    width: 30%;
+    margin: 0;
+  }
+  .footer__social-media {
+    width: 30%;
+    margin: 0;
+  }
+  .footer__interaction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 30%;
+    margin-top: 40px;
+  }
+  .portfolio__card {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 85vw;
+  }
+  .header .burger {
+    display: none;
+  }
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__emails {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 50px;
+  }
+  .hero {
+    font-size: 44px;
+  }
+  .hero .modal {
+    top: -300%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 30%;
+    height: 630px;
+    gap: 10px;
+    border-radius: 4px;
+  }
+  .article__card {
+    width: 22%;
+  }
+  .article__heading {
+    text-align: start;
+  }
+  .business {
+    display: block;
+  }
+  .business__card {
+    width: 31%;
+  }
+  .team__card {
+    width: 22%;
+  }
+  .clients__card {
+    width: 14.9%;
+  }
+  .footer {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .footer .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: start;
+    width: 85vw;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .footer__interaction {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 32%;
+    margin: 0;
   }
 }/*# sourceMappingURL=main.css.map */
