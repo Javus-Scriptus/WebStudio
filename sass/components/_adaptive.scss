@@ -348,4 +348,16 @@
       margin: 0;
     }
   }
+
+  .portfolio {
+    &__card {
+      width: 31%;
+    }
+
+    &__btns-wrapper {
+      width: 36%;
+      margin-left: auto;
+      justify-content: center;
+    }
+  }
 }

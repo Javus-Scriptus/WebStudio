@@ -17,16 +17,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-section {
-  width: 2000px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-ul {
-  list-style: none;
-}
-
 .logo-span {
   color: #2196f3;
   font-family: "Raleway", sans-serif;
@@ -649,8 +639,8 @@ ul {
   height: 70px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding-left: 50%;
-  padding-top: 25px;
+  padding-left: 34%;
+  padding-top: 5%;
 }
 .team {
   background-color: #f5f4fa;
@@ -992,8 +982,6 @@ ul {
   position: relative;
   margin-top: 15px;
   margin-bottom: 15px;
-  width: 31%;
-  height: 440px;
   -webkit-transition: all 250ms ease-out;
   transition: all 250ms ease-out;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
@@ -1611,5 +1599,15 @@ ul {
             flex-direction: row;
     width: 32%;
     margin: 0;
+  }
+  .portfolio__card {
+    width: 31%;
+  }
+  .portfolio__btns-wrapper {
+    width: 36%;
+    margin-left: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */

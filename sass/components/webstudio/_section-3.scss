@@ -1,4 +1,6 @@
 .business {
+  // max-width: 100vw;
+
   &__cards {
     // width: 100%;
     @extend %standard-center;
@@ -9,7 +11,6 @@
   &__card {
     width: 31%;
     height: 294px;
-    // width: 31.9%;
     /* outline: 2px solid red; */
     @extend %standard-center;
     &:nth-of-type(1) {
@@ -40,10 +41,8 @@
     width: 100%;
     height: 70px;
     align-self: flex-end;
-    // padding-left: 135px;
-    // padding-left: 24.5%;
-    padding-left: 50%;
-    padding-top: 25px;
+    padding-left: 34%;
+    padding-top: 5%;
   }
 
   &__heading {
