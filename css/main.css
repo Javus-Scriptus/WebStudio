@@ -28,7 +28,6 @@ body::-webkit-scrollbar {
           justify-content: space-between;
   width: 80vw;
   overflow: hidden;
-  outline: 2px solid red;
 }
 
 :root {
@@ -104,6 +103,32 @@ body::-webkit-scrollbar {
 }
 .header .burger {
   display: none;
+  width: 25px;
+  height: 20px;
+  position: relative;
+  margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .burger__line {
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 3px;
+}
+.header .burger::before, .header .burger::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #000;
+  position: absolute;
+}
+.header .burger::before {
+  top: 0;
+}
+.header .burger::after {
+  bottom: 0;
 }
 .header__logo {
   color: #000000;
@@ -116,7 +141,7 @@ body::-webkit-scrollbar {
   font-family: "Raleway", sans-serif;
   /* outline: 2px solid red; */
 }
-.header__nav {
+.header__breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1324,41 +1349,34 @@ body::-webkit-scrollbar {
             justify-content: space-between;
   }
   .header .burger {
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    margin-left: auto;
-  }
-  .header .burger::before {
-    content: "";
-    width: 100%;
-    height: 3px;
-    background: #000;
-    position: absolute;
-    top: 0;
-  }
-  .header .burger::after {
-    content: "";
-    width: 100%;
-    height: 3px;
-    background: #000;
-    position: absolute;
-    bottom: 0;
-  }
-  .header .burger__line {
-    background: #000;
-    width: 100%;
-    height: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .header__logo {
     margin: 0;
   }
   .header__nav {
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    -webkit-animation: burgerAnimation 0.4s;
+            animation: burgerAnimation 0.4s;
   }
-  .header__emails {
-    display: none;
+  .header .header.open .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .hero {
     padding: 0;

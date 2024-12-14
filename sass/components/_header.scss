@@ -16,6 +16,36 @@
 
   .burger {
     display: none;
+    width: 25px;
+    height: 20px;
+    position: relative;
+    margin-left: auto;
+    align-items: center;
+    // outline: 2px solid red;
+
+    &__line {
+      position: absolute;
+      background-color: #000;
+      width: 100%;
+      height: 3px;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      width: 100%;
+      height: 3px;
+      background: #000;
+      position: absolute;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
   }
 
   &__logo {
@@ -30,7 +60,7 @@
     /* outline: 2px solid red; */
   }
 
-  &__nav {
+  &__breadcrumbs {
     display: flex;
     gap: 50px;
     margin-left: auto;
