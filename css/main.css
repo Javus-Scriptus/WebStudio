@@ -748,7 +748,7 @@ body::-webkit-scrollbar {
   max-width: 100%;
 }
 .clients__cards {
-  gap: 30px;
+  gap: 2%;
   padding-bottom: 94px;
   /* outline: 2px solid red; */
 }
@@ -1340,7 +1340,7 @@ body::-webkit-scrollbar {
     opacity: 1;
   }
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .container {
     width: 95vw;
   }
@@ -1421,10 +1421,17 @@ body::-webkit-scrollbar {
     margin-top: 200px;
     margin-left: 15%;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     gap: 32px;
+  }
+  .header__email {
+    font-size: 34px;
+    font-weight: 500;
+  }
+  .header__email--smaller {
+    font-size: 24px;
   }
   .header__socials {
     display: -webkit-box;
@@ -1453,10 +1460,6 @@ body::-webkit-scrollbar {
   }
   .header__icon {
     display: none;
-  }
-  .header__email {
-    font-size: 34px;
-    font-weight: 500;
   }
   .hidden-items {
     display: none;
