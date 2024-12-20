@@ -48,6 +48,7 @@
       overflow-y: auto;
       animation: burgerAnimation 0.4s;
       background: #fff;
+      // overflow: hidden;
     }
 
     .header.open &__nav {
@@ -211,33 +212,36 @@
 }
 
 // TODO tablet
-// @media screen and (min-width: 768px) and (max-width: 1200px) {
 @media screen and (min-width: 768px) {
   .container {
     width: 95vw;
   }
 
   .header {
-    position: static;
-
     &__logo {
       margin: 0;
     }
 
     &__nav {
       margin-left: auto;
+      margin-right: auto;
+      gap: 30%;
       display: flex;
-    }
 
-    &__email {
-      // outline: 2px solid red;
-      width: 180px;
+      li {
+        height: 20px;
+      }
     }
 
     &__emails {
       flex-direction: column;
       gap: 10px;
       display: flex;
+    }
+
+    &__email {
+      // outline: 2px solid red;
+      width: 180px;
     }
 
     .burger {
@@ -333,7 +337,6 @@
 }
 
 // TODO desktop
-
 @media screen and (min-width: 1200px) {
   .container {
     width: 85vw;
@@ -342,10 +345,6 @@
   .header {
     .burger {
       display: none;
-    }
-
-    &__nav {
-      display: flex;
     }
 
     &__emails {

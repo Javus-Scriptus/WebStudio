@@ -87,3 +87,34 @@
     }
   }
 }
+
+@media screen and (min-width: 320px) {
+  .team {
+    &__card {
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    &__card {
+      width: 48%;
+      margin-top: 30px;
+    }
+
+    &__img {
+      height: 70%;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    &__card {
+      width: 22%;
+    }
+  }
+}

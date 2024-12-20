@@ -49,3 +49,9 @@
     @extend %h2-styles;
   }
 }
+
+@media screen and (min-width: 320px) {
+  .business {
+    display: none;
+  }
+}

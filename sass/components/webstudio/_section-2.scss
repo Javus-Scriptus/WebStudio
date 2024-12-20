@@ -52,3 +52,42 @@
     height: 70px;
   }
 }
+
+@media screen and (min-width: 320px) {
+  .article {
+    &__card {
+      width: 100%;
+    }
+
+    &__heading {
+      text-align: center;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article {
+    &__card {
+      width: 48%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      // @extend %standart-center;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article {
+    &__card {
+      width: 22%;
+    }
+
+    &__heading {
+      text-align: start;
+    }
+  }
+}
