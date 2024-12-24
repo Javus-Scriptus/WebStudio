@@ -68,35 +68,35 @@
     }
 
     &--2 {
-      background: url('../css/img/portfolio/img2.jpg');
+      background: url('./css/img/portfolio/img2.jpg');
     }
 
     &--3 {
-      background: url('../css/img/portfolio/img3.jpg');
+      background: url('./css/img/portfolio/img3.jpg');
     }
 
     &--4 {
-      background: url('../css/img/portfolio/img4.jpg');
+      background: url('./css/img/portfolio/img4.jpg');
     }
 
     &--5 {
-      background: url('../css/img/portfolio/img5.jpg');
+      background: url('./css/img/portfolio/img5.jpg');
     }
 
     &--6 {
-      background: url('../css/img/portfolio/img6.jpg');
+      background: url('./css/img/portfolio/img6.jpg');
     }
 
     &--7 {
-      background: url('../css/img/portfolio/img7.jpg');
+      background: url('./css/img/portfolio/img7.jpg');
     }
 
     &--8 {
-      background: url('../css/img/portfolio/img8.jpg');
+      background: url('./css/img/portfolio/img8.jpg');
     }
 
     &--9 {
-      background: url('../css/img/portfolio/img9.jpg');
+      background: url('./css/img/portfolio/img9.jpg');
     }
 
     &:hover .portfolio__bg {
@@ -151,6 +151,53 @@
   }
 }
 
+// TODO retinisation
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 400dpi),
+  (min-resolution: 4dppx) {
+  .portfolio {
+    &__bg-container {
+      &--1 {
+        background: url('./retinisation/portfolio/img1@2x.jpg');
+      }
+
+      &--2 {
+        background: url('./retinisation/portfolio/img2@2x.jpg');
+      }
+
+      &--3 {
+        background: url('./retinisation/portfolio/img3@2x.jpg');
+      }
+
+      &--4 {
+        background: url('./retinisation/portfolio/img4@2x.jpg');
+      }
+
+      &--5 {
+        background: url('./retinisation/portfolio/img5@2x.jpg');
+      }
+
+      &--6 {
+        background: url('./retinisation/portfolio/img6@2x.jpg');
+      }
+
+      &--7 {
+        background: url('./retinisation/portfolio/img7@2x.jpg');
+      }
+
+      &--8 {
+        background: url('./retinisation/portfolio/img8@2x.jpg');
+      }
+
+      &--9 {
+        background: url('./retinisation/portfolio/img9@2x.jpg');
+      }
+    }
+  }
+}
+
+// adaptive
 @media screen and (min-width: 320px) {
   .portfolio__card {
     width: 100%;

@@ -1,7 +1,7 @@
 .hero {
+  background: url('./img/webstudio/section-1-bg.png');
   @extend %background-styles;
   max-width: 100%;
-  background: url('../css/img/webstudio/section-1-bg.png');
   background-size: cover;
   // padding: 200px;
   margin-bottom: 94px;
@@ -46,17 +46,27 @@
 
     &:hover::after {
       content: '';
-      background: url('../css/img/webstudio/keyframes-arrow.png');
+      background: url('./img/webstudio/keyframes-arrow.png');
       // @extend %background-styles;
       width: 35px;
       height: 35px;
       position: absolute;
       top: -30px;
       right: 100px;
-      /* transform: rotate(90deg); */
       animation: arrow-hover 6s infinite linear;
+      /* transform: rotate(90deg); */
       /* animation-direction: alternate-reverse; */
     }
+  }
+}
+
+//TODO retinisation
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('./retinisation/webstudio/hero@2x.jpg');
   }
 }
 
