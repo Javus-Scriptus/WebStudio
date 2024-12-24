@@ -462,7 +462,7 @@ body::-webkit-scrollbar {
   }
 }
 .hero {
-  background: url("./img/webstudio/section-1-bg.png");
+  background: url("../img/webstudio/section-1-bg.png");
   max-width: 100%;
   background-size: cover;
   margin-bottom: 94px;
@@ -506,7 +506,7 @@ body::-webkit-scrollbar {
 }
 .hero .hero__btn:hover::after {
   content: "";
-  background: url("./img/webstudio/keyframes-arrow.png");
+  background: url("../css/img/webstudio/keyframes-arrow.png");
   width: 35px;
   height: 35px;
   position: absolute;
@@ -518,12 +518,11 @@ body::-webkit-scrollbar {
   /* animation-direction: alternate-reverse; */
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2.0833333333333335), (min-resolution: 200dpi), (-webkit-min-device-pixel-ratio: 4), (min-resolution: 4dppx) {
   .hero {
-    background-image: url("./retinisation/webstudio/hero@2x.jpg");
+    background-image: url("../retinisation/webstudio/hero@2x.jpg");
   }
 }
-/* modal */
 .backdrop.is-visible .modal {
   top: 55%;
 }
@@ -1438,28 +1437,28 @@ body::-webkit-scrollbar {
   background: url("../css/img/portfolio/img1.jpg");
 }
 .portfolio__bg-container--2 {
-  background: url("./css/img/portfolio/img2.jpg");
+  background: url("../css/img/portfolio/img2.jpg");
 }
 .portfolio__bg-container--3 {
-  background: url("./css/img/portfolio/img3.jpg");
+  background: url("../css/img/portfolio/img3.jpg");
 }
 .portfolio__bg-container--4 {
-  background: url("./css/img/portfolio/img4.jpg");
+  background: url("../css/img/portfolio/img4.jpg");
 }
 .portfolio__bg-container--5 {
-  background: url("./css/img/portfolio/img5.jpg");
+  background: url("../css/img/portfolio/img5.jpg");
 }
 .portfolio__bg-container--6 {
-  background: url("./css/img/portfolio/img6.jpg");
+  background: url("../css/img/portfolio/img6.jpg");
 }
 .portfolio__bg-container--7 {
-  background: url("./css/img/portfolio/img7.jpg");
+  background: url("../css/img/portfolio/img7.jpg");
 }
 .portfolio__bg-container--8 {
-  background: url("./css/img/portfolio/img8.jpg");
+  background: url("../css/img/portfolio/img8.jpg");
 }
 .portfolio__bg-container--9 {
-  background: url("./css/img/portfolio/img9.jpg");
+  background: url("../css/img/portfolio/img9.jpg");
 }
 .portfolio__bg-container:hover .portfolio__bg {
   height: 294px;

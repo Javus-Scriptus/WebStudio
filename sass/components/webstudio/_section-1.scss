@@ -1,5 +1,5 @@
 .hero {
-  background: url('./img/webstudio/section-1-bg.png');
+  background: url('../img/webstudio/section-1-bg.png');
   @extend %background-styles;
   max-width: 100%;
   background-size: cover;
@@ -46,7 +46,7 @@
 
     &:hover::after {
       content: '';
-      background: url('./img/webstudio/keyframes-arrow.png');
+      background: url('../css/img/webstudio/keyframes-arrow.png');
       // @extend %background-styles;
       width: 35px;
       height: 35px;
@@ -63,14 +63,14 @@
 //TODO retinisation
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  (min-resolution: 200dpi),
+  (min-resolution: 4dppx) {
   .hero {
-    background-image: url('./retinisation/webstudio/hero@2x.jpg');
+    background-image: url('../retinisation/webstudio/hero@2x.jpg');
   }
 }
 
-/* modal */
+// modal
 
 .backdrop.is-visible .modal {
   top: 55%;
