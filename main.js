@@ -29,3 +29,8 @@ document.querySelector('.burger').addEventListener('click', function () {
   this.classList.toggle('active');
   document.querySelector('.header').classList.toggle('open');
 });
+
+let loader = document.querySelector('.loader')
+window.addEventListener('load', () => {
+  loader.classList.add('hidden__loader')
+})
