@@ -507,7 +507,7 @@ body::-webkit-scrollbar {
   }
 }
 .hero {
-  background: url("../img/webstudio/section-1-bg.png");
+  background: url("../css/img/webstudio/section-1-bg.png");
   max-width: 100%;
   background-size: cover;
   margin-bottom: 94px;
