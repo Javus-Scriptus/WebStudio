@@ -30,6 +30,7 @@ document.querySelector('.burger').addEventListener('click', function () {
   document.querySelector('.header').classList.toggle('open');
 });
 
+// loader
 let loader = document.querySelector('.loader')
 window.addEventListener('load', () => {
   loader.classList.add('hidden__loader')
